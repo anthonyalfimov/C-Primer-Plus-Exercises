@@ -50,7 +50,7 @@ void show709()
     std::cout << "\nDone.\n";
 }
 
-int getInfo(Student pa[], int size)
+int e709::getInfo(Student pa[], int size)
 {
     std::cout << "Enter information about students.\n"
                  "Leave the name field blank to terminate input.\n";

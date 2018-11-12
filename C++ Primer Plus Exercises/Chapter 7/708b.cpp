@@ -10,7 +10,7 @@
 
 //  Constant data
 constexpr int Seasons {4};
-const char* SeasonNames[Seasons]
+const char* const SeasonNames[Seasons]           // const pointers to const data
 {
     "Spring", "Summer", "Autumn", "Winter"
 };
