@@ -15,8 +15,6 @@ namespace e803
     void makeUpperCase(std::string & str);
 }
 
-using namespace e803;
-
 void show803()
 {
     std::string input;
@@ -25,7 +23,7 @@ void show803()
     std::getline(std::cin, input);
     while (std::cin && input != "q")
     {
-        makeUpperCase(input);
+        e803::makeUpperCase(input);
         std::cout << input << "\n";
         std::cout << "Next string (q to quit): ";
         std::getline(std::cin, input);

@@ -8,15 +8,19 @@
 
 #include <iostream>
 
-/**
- @param numbers total number of available choices
- @param picks number of picks
- @return probability of picking `picks` numbers correctly
- from `numbers` choices
- */
-long double probability(unsigned numbers, unsigned picks);
+namespace e704
+{
+    /**
+     @param numbers total number of available choices
+     @param picks number of picks
+     @return probability of picking `picks` numbers correctly
+     from `numbers` choices
+     */
+    long double probability(unsigned numbers, unsigned picks);
+    void badInputCleanup();
+}
 
-void bad_input_cleanup();
+using namespace e704;
 
 void show704()
 {
@@ -26,17 +30,17 @@ void show704()
     
     std::cout << "Enter the total number of choices on the game field\n"
                  "and the number of picks allowed:\n";
-    while (                         // while bad input
+    while (                          // while bad input
            !(std::cin >> fieldNumbers >> fieldPicks) ||
            fieldNumbers < 0 ||
            fieldPicks   < 0 ||
            fieldPicks > fieldNumbers
           )
-        bad_input_cleanup();        // request new input
+        badInputCleanup();           // request new input
     
     std::cout << "Enter the total number of choices for the power ball:\n";
     while (!(std::cin >> powerNumbers) || powerNumbers < powerPicks)
-        bad_input_cleanup();
+        badInputCleanup();
     
     std::cout
     << "You have one chance in "
@@ -48,7 +52,7 @@ void show704()
 
 // Calculates probability of picking `picks` numbers correctly
 // from `numbers` choices
-long double probability(unsigned numbers, unsigned picks)
+long double e704::probability(unsigned numbers, unsigned picks)
 {
     long double result {1.0};
     long double n;
@@ -60,7 +64,7 @@ long double probability(unsigned numbers, unsigned picks)
     return result;
 }
 
-void bad_input_cleanup()
+void e704::badInputCleanup()
 {
     std::cout << "Bad input. Try again:\n";
     if (!std::cin)

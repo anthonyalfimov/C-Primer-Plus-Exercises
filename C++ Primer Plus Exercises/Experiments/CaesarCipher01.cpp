@@ -7,7 +7,7 @@
 #include <iostream>
 #include <cctype>                       // character type funcrions
 
-const int LetterCount {26};
+constexpr int LetterCount {26};
 
 void showCaesarCipher01()
 {

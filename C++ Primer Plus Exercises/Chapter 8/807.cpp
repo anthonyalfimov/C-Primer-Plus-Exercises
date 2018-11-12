@@ -8,6 +8,9 @@
 
 #include <iostream>
 
+//  Struct name size
+constexpr int stringSize {50};
+
 namespace e807
 {
 //  Template A: array elements are data
@@ -18,12 +21,9 @@ namespace e807
     template <typename T>
     T sumArray(T* arr[], int n);
     
-//  Struct name size
-    constexpr int StringSize {50};
-    
     struct Debts
     {
-        char name[StringSize];
+        char name[stringSize];
         double amount;
     };
 }

@@ -12,28 +12,33 @@
 constexpr int StrSize {50};
 constexpr int MemberCount {4};
 
-// Benevolent Order of Programmers name structure
-struct Bop
+namespace e604
 {
-    const char fullname[StrSize];
-    const char title[StrSize];
-    const char bopname[StrSize];
-    int preference;
-};
+//  Benevolent Order of Programmers name structure
+    struct Bop
+    {
+        const char fullname[StrSize];
+        const char title[StrSize];
+        const char bopname[StrSize];
+        int preference;
+    };
+    
+    enum {fullname, title, bopname};
+    
+//  Function prototypes
+    void showMenu();
+    char getCharacter();
+    bool isGoodInput(char);
+    
+    void displayFullname();
+    void displayTitle();
+    void displayBopname();
+    void displayPreference();
+}
 
-enum {fullname, title, bopname};
+using namespace e604;
 
-// Function prototypes
-void showTheMenu();
-char getCharacter();
-bool isGoodInput(char);
-
-void displayFullname();
-void displayTitle();
-void displayBopname();
-void displayPreference();
-
-Bop members[MemberCount]
+const Bop members[MemberCount]
 {
     {
         "Boris Forest",
@@ -64,7 +69,7 @@ Bop members[MemberCount]
 void show604()
 {
     std::cout << "Benevolent Order of Programmers report\n";
-    showTheMenu();
+    showMenu();
     char choice;
     while ((choice = getCharacter()) != 'q')
     {
@@ -81,7 +86,7 @@ void show604()
     std::cout << "Done!\n";
 }
 
-void displayFullname()
+void e604::displayFullname()
 {
     for (int i = 0; i < MemberCount; ++i)
     {
@@ -89,7 +94,7 @@ void displayFullname()
     }
 }
 
-void displayTitle()
+void e604::displayTitle()
 {
     for (int i = 0; i < MemberCount; ++i)
     {
@@ -97,7 +102,7 @@ void displayTitle()
     }
 }
 
-void displayBopname()
+void e604::displayBopname()
 {
     for (int i = 0; i < MemberCount; ++i)
     {
@@ -105,7 +110,7 @@ void displayBopname()
     }
 }
 
-void displayPreference()
+void e604::displayPreference()
 {
     for (int i = 0; i < MemberCount; ++i)
     {
@@ -118,19 +123,19 @@ void displayPreference()
     }
 }
 
-char getCharacter()
+char e604::getCharacter()
 {
-        //showTheMenu();
+//  showTheMenu();                  // Add to display menu every time input is prompted
     std::cout << "\nYour choice: ";
     return std::tolower(std::cin.get());
 }
 
-bool isGoodInput(char ch)
+bool e604::isGoodInput(char ch)
 {
     return (ch >= 'a' && ch <= 'd') || ch == 'q';
 }
 
-void showTheMenu()
+void e604::showMenu()
 {
     std::cout <<
     "===================================================\n"

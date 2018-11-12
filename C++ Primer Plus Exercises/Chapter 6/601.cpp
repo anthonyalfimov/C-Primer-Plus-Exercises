@@ -17,14 +17,14 @@ void show601()
     
     while (std::cin.get(ch) && ch != '@')   // until sentinel character is encountered
     {
-        if (!std::isdigit(ch))       // if char is not a digit
+        if (!std::isdigit(ch))              // if char is not a digit
         {
-            if (std::islower(ch))    // test if lower case character
+            if (std::islower(ch))           // test if lower case character
                 ch = std::toupper(ch);
-            else if (std::isupper(ch))   // test if upper case character
+            else if (std::isupper(ch))      // test if upper case character
                 ch = std::tolower(ch);
             
-            std::cout << ch;    // echo character
+            std::cout << ch;                // echo character
         }
     }
     

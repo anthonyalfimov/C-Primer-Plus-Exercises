@@ -8,9 +8,10 @@
 
 #include <iostream>
 
+constexpr int maxEntries {5};
+
 namespace e707 {
-    constexpr int MaxEntries {5};
-    
+
     /**
      Fills the passed array with user input and returns the pointer to a location
      one past the last input entry. Negative values and non-numbers terminate input.
@@ -43,9 +44,9 @@ using namespace e707;
 
 void show707()
 {
-    double properties[MaxEntries];
+    double properties[maxEntries];
     
-    double* propertiesEnd {fillEntires(properties, properties + MaxEntries)};
+    double* propertiesEnd {fillEntires(properties, properties + maxEntries)};
     showEntries(properties, propertiesEnd);
     
     if (properties != propertiesEnd)

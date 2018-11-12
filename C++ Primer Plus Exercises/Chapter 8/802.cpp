@@ -9,11 +9,11 @@
 #include <iostream>
 #include <cstring>
 
+constexpr int stringSize {40};
+constexpr int barCount {3};
+
 namespace e802
 {
-    constexpr int stringSize {40};
-    constexpr int barCount {3};
-    
     struct CandyBar
     {
         char brand[stringSize];

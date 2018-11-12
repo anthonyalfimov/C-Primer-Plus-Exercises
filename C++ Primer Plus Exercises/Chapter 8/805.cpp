@@ -8,10 +8,10 @@
 
 #include <iostream>
 
+constexpr int size {5};
+
 namespace e805
 {
-    constexpr int size {5};
-    
     template <typename T>
     T max5(const T arr[]);
 }

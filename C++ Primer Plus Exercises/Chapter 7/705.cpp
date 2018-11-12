@@ -8,7 +8,12 @@
 
 #include <iostream>
 
-unsigned long long factorial(unsigned);
+namespace e705
+{
+    unsigned long long factorial(unsigned);
+}
+
+using namespace e705;
 
 void show705()
 {
@@ -22,10 +27,10 @@ void show705()
     std::cout << "\nDone.\n";
 }
 
-unsigned long long factorial(unsigned x)
+unsigned long long e705::factorial(unsigned x)
 {
     if (x == 0)
         return 1;
     else
-        return x * factorial(x - 1);
+        return x * e705::factorial(x - 1);
 }

@@ -7,14 +7,15 @@
 
 #include <iostream>
 
-namespace e708a {
-    //  Constant data
-    constexpr int Seasons {4};
-    const char* SeasonNames[Seasons]
-    {
-        "Spring", "Summer", "Autumn", "Winter"
-    };
-    
+//  Constant data
+constexpr int Seasons {4};
+const char* SeasonNames[Seasons]
+{
+    "Spring", "Summer", "Autumn", "Winter"
+};
+
+namespace e708a
+{
     //  Function prototypes
     void fillExpenses(double array[], int size);
     void showExpenses(const double array[], int size);

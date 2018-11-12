@@ -8,10 +8,10 @@
 
 #include <iostream>
 
+constexpr int ArraySize {10};
+
 namespace e706 {
-    constexpr int ArraySize {10};
-    
-    // Function names from the exercise are used:
+//  Function names from the exercise are used:
     
     /**
      Fills passed array with user input, returns the actual number of entries

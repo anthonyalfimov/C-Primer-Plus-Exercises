@@ -10,17 +10,22 @@
 
 constexpr int maxScores {10};
 
+namespace e702
+{
 //  Function prototypes
-/**
- Fills the array with user-input scores; returns the number of scores filled.
+    /**
+     Fills the array with user-input scores; returns the number of scores filled.
+     
+     @param scores pointer to array
+     @param limit array size
+     @return number of scores filled
+     */
+    int fillScores(int scores[], int limit);
+    void displayScores(const int scores[], int size);
+    double averageScore(const int scores[], int size);
+}
 
- @param scores pointer to array
- @param limit array size
- @return number of scores filled
- */
-int fillScores(int scores[], int limit);
-void displayScores(const int scores[], int size);
-double averageScore(const int scores[], int size);
+using namespace e702;
 
 void show702()
 {
@@ -33,7 +38,7 @@ void show702()
     std::cout << "Done.\n";
 }
 
-int fillScores(int scores[], int limit)
+int e702::fillScores(int scores[], int limit)
 {
     std::cout << "Enter your golf scores <q to terminate>:\n";
     int i {};
@@ -49,7 +54,7 @@ int fillScores(int scores[], int limit)
     return i;
 }
 
-void displayScores(const int scores[], int size)
+void e702::displayScores(const int scores[], int size)
 {
     if (size == 0)
         std::cout << "No data!\n";
@@ -62,7 +67,7 @@ void displayScores(const int scores[], int size)
     }
 }
 
-double averageScore(const int scores[], int size)
+double e702::averageScore(const int scores[], int size)
 {
     if (size == 0)
         return 0;

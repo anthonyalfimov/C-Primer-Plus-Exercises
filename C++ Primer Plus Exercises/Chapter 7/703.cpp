@@ -10,19 +10,23 @@
 
 constexpr int markerLength {40};
 
-struct Box
+namespace e703
 {
-    char marker[markerLength];
-    float height;
-    float width;
-    float length;
-    float volume;
-};
-
+    struct Box
+    {
+        char marker[markerLength];
+        float height;
+        float width;
+        float length;
+        float volume;
+    };
+    
 //  Function prototypes
-void setBoxVolume(Box*);
+    void setBoxVolume(Box*);
+    void displayBox(Box);
+}
 
-void displayBox(Box);
+using namespace e703;
 
 void show703()
 {
@@ -40,12 +44,12 @@ void show703()
     std::cout << "\nDone.\n";
 }
 
-void setBoxVolume(Box* pb)
+void e703::setBoxVolume(Box* pb)
 {
     pb->volume = pb->height * pb->width * pb->length;
 }
 
-void displayBox(Box b)
+void e703::displayBox(Box b)
 {
     std::cout
         << "Box: " << b.marker << "\n"

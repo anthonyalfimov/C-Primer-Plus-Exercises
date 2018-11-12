@@ -8,14 +8,14 @@
 
 #include <iostream>
 
+//  Constant data
+constexpr int Seasons {4};
+const char* SeasonNames[Seasons]
+{
+    "Spring", "Summer", "Autumn", "Winter"
+};
+
 namespace e708b {
-    //  Constant data
-    constexpr int Seasons {4};
-    const char* SeasonNames[Seasons]
-    {
-        "Spring", "Summer", "Autumn", "Winter"
-    };
-    
     // Array structure
     struct Array
     {

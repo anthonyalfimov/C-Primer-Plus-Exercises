@@ -8,17 +8,18 @@
 
 #include <iostream>
 
+constexpr int opNumber {4};
+const char* opNames[opNumber]
+{
+    "Sum: ",
+    "Difference: ",
+    "Product: ",
+    "Quotient: "
+};
+
 namespace e710 {
-    //  Calculation functions:
+//  Calculation functions:
     typedef double (*pcalc)(double, double);
-    constexpr int opNumber {4};
-    const char* opNames[opNumber]
-    {
-        "Sum: ",
-        "Difference: ",
-        "Product: ",
-        "Quotient: "
-    };
     
     double add(double x, double y) { return x + y; }
     double subtract(double x, double y) { return x - y; }

@@ -10,9 +10,14 @@
 #include <string>
 #include <cctype>
 
-bool isVowel(char);
+const std::string sentinel {"q"};
 
-std::string sentinel {"q"};
+namespace e607
+{
+    bool isVowel(char);
+}
+
+using namespace e607;
 
 void show607()
 {
@@ -40,7 +45,7 @@ void show607()
     << countOther << " others.\n";
 }
 
-bool isVowel(char ch)
+bool e607::isVowel(char ch)
 {
     ch = std::tolower(ch);
     return

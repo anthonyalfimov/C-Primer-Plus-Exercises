@@ -8,21 +8,24 @@
 
 #include <iostream>
 
-constexpr int SLEN {30};
-struct Student
+constexpr int stringLenght {30};
+
+namespace e709
 {
-    char fullname[SLEN];
-    char hobby[SLEN];
-    int  oopLevel;
-};
+    struct Student
+    {
+        char fullname[stringLenght];
+        char hobby[stringLenght];
+        int  oopLevel;
+    };
+    
+    int getInfo(Student pa[], int size);
+    void display1(Student st);
+    void display2(const Student* pst);
+    void display3(const Student pa[], int size);
+}
 
-int getinfo(Student pa[], int size);
-
-void display1(Student st);
-
-void display2(const Student* pst);
-
-void display3(const Student pa[], int size);
+using namespace e709;
 
 void show709()
 {
@@ -33,7 +36,7 @@ void show709()
         continue;
     
     Student* ptr_stu {new Student[classSize]};
-    int entries {getinfo(ptr_stu, classSize)};
+    int entries {getInfo(ptr_stu, classSize)};
     std::cout << "\nRead " << entries << " student entries.\n\n";
     for (int i = 0; i < entries; i++)
     {
@@ -47,7 +50,7 @@ void show709()
     std::cout << "\nDone.\n";
 }
 
-int getinfo(Student pa[], int size)
+int getInfo(Student pa[], int size)
 {
     std::cout << "Enter information about students.\n"
                  "Leave the name field blank to terminate input.\n";
@@ -58,12 +61,12 @@ int getinfo(Student pa[], int size)
         std::cout << "Student #" << i + 1 << "\n";
         
         std::cout << "Full name: ";
-        std::cin.getline(pa[i].fullname, SLEN);
+        std::cin.getline(pa[i].fullname, stringLenght);
         if (pa[i].fullname[0] == '\0')          // terminate on empty line
             break;
         
         std::cout << "Hobby: ";
-        std::cin.getline(pa[i].hobby, SLEN);
+        std::cin.getline(pa[i].hobby, stringLenght);
         
         std::cout << "OOP Level: ";
         while (!(std::cin >> pa[i].oopLevel) || pa[i].oopLevel < 0)
@@ -81,7 +84,7 @@ int getinfo(Student pa[], int size)
     return i;
 }
 
-void display1(Student st)
+void e709::display1(Student st)
 {
     std::cout
         << st.fullname << "\n"
@@ -89,7 +92,7 @@ void display1(Student st)
         << "OOP Level: " << st.oopLevel << "\n";
 }
 
-void display2(const Student* pst)
+void e709::display2(const Student* pst)
 {
     std::cout
         << pst->fullname << "\n"
@@ -97,11 +100,11 @@ void display2(const Student* pst)
         << "OOP Level: " << pst->oopLevel << "\n";
 }
 
-void display3(const Student pa[], int n)
+void e709::display3(const Student pa[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        display1(pa[i]);
+        e709::display1(pa[i]);
         std::cout << "\n";
     }
 }
