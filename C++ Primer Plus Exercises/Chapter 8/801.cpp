@@ -8,11 +8,11 @@
 
 #include <iostream>
 
+static unsigned int callCount {0};      // Using global variable with internal linkage
+                                        // to make it accesible to show801() function
+
 namespace e801
 {
-    unsigned int callCount {0};     // using a global variable as `static` keyword
-                                    // technically hasn't been covered yet
-    
     void weirdPrint(const char * text, int isWeird = 0);
 }
 
@@ -37,10 +37,9 @@ void e801::weirdPrint(const char * text, int isWeird)
         std::cout << text << "\n";
     else
     {
-        for (int i = 0; i < e801::callCount; i++)
+        for (int i = 0; i < callCount; i++)
             std::cout << text << "\n";
     }
     
-    e801::callCount++;              // using a global variable as `static` keyword
-                                    // technically hasn't been covered yet
+    callCount++;
 }
