@@ -8,10 +8,12 @@
 
 #include <iostream>
 
-constexpr int maxEntries {5};
 
-namespace e707 {
-
+namespace
+{
+//  Constant data:
+    constexpr int maxEntries {5};
+    
     /**
      Fills the passed array with user input and returns the pointer to a location
      one past the last input entry. Negative values and non-numbers terminate input.
@@ -40,8 +42,9 @@ namespace e707 {
     void revalueEntries(double factor, double* begin, double* end);
 }
 
-using namespace e707;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show707()
 {
     double properties[maxEntries];
@@ -67,42 +70,45 @@ void show707()
     std::cout << "Done!\n";
 }
 
-double* e707::fillEntires(double* begin, double* end)
+namespace
 {
-    double value;
-    double* pt;     // pointer to current position in array
-    
-    for (pt = begin; pt != end; pt++)
+    double* fillEntires(double* begin, double* end)
     {
-        std::cout << "Enter value #" << (pt - begin) + 1 << ": ";
-        std::cin >> value;
-        if (!std::cin)
+        double value;
+        double* pt;     // pointer to current position in array
+        
+        for (pt = begin; pt != end; pt++)
         {
-            std::cin.clear();
-            while (std::cin.get() != '\n')
-                continue;
-            std::cout << "Bad input! Input process terminated.\n";
-            break;
+            std::cout << "Enter value #" << (pt - begin) + 1 << ": ";
+            std::cin >> value;
+            if (!std::cin)
+            {
+                std::cin.clear();
+                while (std::cin.get() != '\n')
+                    continue;
+                std::cout << "Bad input! Input process terminated.\n";
+                break;
+            }
+            else if (value < 0)
+            {
+                std::cout << "Negative input! Input process terminated.\n";
+                break;
+            }
+            *pt = value;
         }
-        else if (value < 0)
-        {
-            std::cout << "Negative input! Input process terminated.\n";
-            break;
-        }
-        *pt = value;
+        
+        return pt;
     }
-    
-    return pt;
-}
 
-void e707::showEntries(const double* begin, const double* end)
-{
-    for (const double* pt = begin; pt != end; pt++)
-        std::cout << "Property #" << (pt - begin) + 1 << ": $" << *pt << "\n";
-}
+    void showEntries(const double* begin, const double* end)
+    {
+        for (const double* pt = begin; pt != end; pt++)
+            std::cout << "Property #" << (pt - begin) + 1 << ": $" << *pt << "\n";
+    }
 
-void e707::revalueEntries(double factor, double* begin, double* end)
-{
-    for (double* pt = begin; pt != end; pt++)
-        *pt *= factor;
+    void revalueEntries(double factor, double* begin, double* end)
+    {
+        for (double* pt = begin; pt != end; pt++)
+            *pt *= factor;
+    }
 }

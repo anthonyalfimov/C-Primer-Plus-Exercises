@@ -7,22 +7,23 @@
 
 #include <iostream>
 
+namespace
+{
 //  Constant data
-constexpr int Seasons {4};
-const char* const SeasonNames[Seasons]          // const pointers to const data
-{
-    "Spring", "Summer", "Autumn", "Winter"
-};
-
-namespace e708a
-{
-    //  Function prototypes
+    constexpr int Seasons {4};
+    const char* const SeasonNames[Seasons]          // const pointers to const data
+    {
+        "Spring", "Summer", "Autumn", "Winter"
+    };
+    
+//  Function prototypes
     void fillExpenses(double array[], int size);
     void showExpenses(const double array[], int size);
 }
 
-using namespace e708a;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show708a()
 {
     double expenses[Seasons];
@@ -30,24 +31,26 @@ void show708a()
     showExpenses(expenses, Seasons);
 }
 
-void e708a::fillExpenses(double array[], int size)
+namespace
 {
-    for (int i = 0; i < size; i++)
+    void fillExpenses(double array[], int size)
     {
-        std::cout << "Enter " << SeasonNames[i] << " expenses: ";
-        std::cin >> array[i];
+        for (int i = 0; i < size; i++)
+        {
+            std::cout << "Enter " << SeasonNames[i] << " expenses: ";
+            std::cin >> array[i];
+        }
+    }
+    
+    void showExpenses(const double array[], int size)
+    {
+        double total {};
+        std::cout << "\nEXPENSES\n";
+        for (int i = 0; i < size; i++)
+        {
+            std::cout << SeasonNames[i] << ": $" << array[i] << "\n";
+            total += array[i];
+        }
+        std::cout << "TOTAL : $" << total;
     }
 }
-
-void e708a::showExpenses(const double array[], int size)
-{
-    double total {};
-    std::cout << "\nEXPENSES\n";
-    for (int i = 0; i < size; i++)
-    {
-        std::cout << SeasonNames[i] << ": $" << array[i] << "\n";
-        total += array[i];
-    }
-    std::cout << "TOTAL : $" << total;
-}
-

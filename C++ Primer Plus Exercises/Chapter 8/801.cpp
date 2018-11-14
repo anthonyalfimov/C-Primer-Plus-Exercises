@@ -8,17 +8,18 @@
 
 #include <iostream>
 
-static unsigned int callCount {0};      // Using global variable with internal linkage
-                                        // to make it accesible to show801() function
-
-namespace e801
+namespace
 {
+    unsigned int callCount {0};      // Using global variable with internal linkage
+                                     // to make it accesible to show801() function
     void weirdPrint(const char * text, int isWeird = 0);
 }
 
+//   =============================
+//   |       Main function       |
+//   =============================
 void show801()
 {
-    using namespace e801;
     std::cout << "Attempt repeated print with " << callCount << " function calls:\n";
     weirdPrint("Test text 1", 1);
     std::cout << "Normal print using the default parameter:\n";
@@ -28,18 +29,19 @@ void show801()
     std::cout << "Repeated print after " << callCount << " function calls:\n";
     weirdPrint("Test text 4", 15);
     std::cout << "\nDone\n";
-    
 }
 
-void e801::weirdPrint(const char * text, int isWeird)
+namespace
 {
-    if (!isWeird)
-        std::cout << text << "\n";
-    else
+    void weirdPrint(const char * text, int isWeird)
     {
-        for (int i = 0; i < callCount; i++)
+        if (!isWeird)
             std::cout << text << "\n";
+        else
+        {
+            for (int i = 0; i < callCount; i++)
+                std::cout << text << "\n";
+        }
+        callCount++;
     }
-    
-    callCount++;
 }

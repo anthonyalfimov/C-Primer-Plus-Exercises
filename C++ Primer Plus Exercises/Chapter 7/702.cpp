@@ -8,10 +8,11 @@
 
 #include <iostream>
 
-constexpr int maxScores {10};
-
-namespace e702
+namespace
 {
+//  Constant data
+    constexpr int maxScores {10};
+    
 //  Function prototypes
     /**
      Fills the array with user-input scores; returns the number of scores filled.
@@ -25,8 +26,9 @@ namespace e702
     double averageScore(const int scores[], int size);
 }
 
-using namespace e702;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show702()
 {
     int golfScores[maxScores];
@@ -38,45 +40,48 @@ void show702()
     std::cout << "Done.\n";
 }
 
-int e702::fillScores(int scores[], int limit)
+namespace
 {
-    std::cout << "Enter your golf scores <q to terminate>:\n";
-    int i {};
-    
-    std::cout << "Score #1: ";
-    // use a buffer value to test for negative input
-    while (i < limit && (std::cin >> scores[i]))
+    int fillScores(int scores[], int limit)
     {
-        ++i;
-        if (i < limit)
-            std::cout << "Score #" << i + 1 << ": ";
-    }
-    return i;
-}
-
-void e702::displayScores(const int scores[], int size)
-{
-    if (size == 0)
-        std::cout << "No data!\n";
-    else
-    {
-        std::cout << scores[0];
-        for (int i = 1; i < size; i++)
-            std::cout << "\t" << scores[i];
-        std::cout << "\n";
-    }
-}
-
-double e702::averageScore(const int scores[], int size)
-{
-    if (size == 0)
-        return 0;
-    else
-    {
-        double total {};
-        for (int i = 0; i < size; i++)
-            total += scores[i];
+        std::cout << "Enter your golf scores <q to terminate>:\n";
+        int i {};
         
-        return total / size;
+        std::cout << "Score #1: ";
+        // use a buffer value to test for negative input
+        while (i < limit && (std::cin >> scores[i]))
+        {
+            ++i;
+            if (i < limit)
+                std::cout << "Score #" << i + 1 << ": ";
+        }
+        return i;
+    }
+
+    void displayScores(const int scores[], int size)
+    {
+        if (size == 0)
+            std::cout << "No data!\n";
+        else
+        {
+            std::cout << scores[0];
+            for (int i = 1; i < size; i++)
+                std::cout << "\t" << scores[i];
+            std::cout << "\n";
+        }
+    }
+
+    double averageScore(const int scores[], int size)
+    {
+        if (size == 0)
+            return 0;
+        else
+        {
+            double total {};
+            for (int i = 0; i < size; i++)
+                total += scores[i];
+            
+            return total / size;
+        }
     }
 }

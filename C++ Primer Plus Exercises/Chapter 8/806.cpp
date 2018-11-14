@@ -9,7 +9,7 @@
 #include <iostream>
 #include <cstring>
 
-namespace e806
+namespace
 {
     template <typename T>
     T maxn(T arr[], int size);
@@ -18,8 +18,9 @@ namespace e806
     const char* maxn(const char* arr[], int size);
 }
 
-using namespace e806;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show806()
 {
     int intTest[6] {12, 2, 41, 5, 32, 41};
@@ -39,23 +40,26 @@ void show806()
     std::cout << "Max in string array: " << maxn(strTest, 5) << "\n";
 }
 
-template <typename T>
-T e806::maxn(T arr[], int size)
+namespace
 {
-    T max = arr[0];
-    for (int i = 1; i < size; i++)
-        if (arr[i] > max) max = arr[i];
-    
-    return max;
-}
+    template <typename T>
+    T maxn(T arr[], int size)
+    {
+        T max = arr[0];
+        for (int i = 1; i < size; i++)
+            if (arr[i] > max) max = arr[i];
+        
+        return max;
+    }
 
-template <>
-const char* e806::maxn(const char* arr[], int size)
-{
-    int imax = 0;       // index of the longest string
-    for (int i = 1; i < size; i++)
-        if (std::strlen(arr[i]) > std::strlen(arr[imax]))
-            imax = i;
-    
-    return arr[imax];
+    template <>
+    const char* maxn(const char* arr[], int size)
+    {
+        int imax = 0;       // index of the longest string
+        for (int i = 1; i < size; i++)
+            if (std::strlen(arr[i]) > std::strlen(arr[imax]))
+                imax = i;
+        
+        return arr[imax];
+    }
 }

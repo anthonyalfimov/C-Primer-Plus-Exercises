@@ -8,9 +8,11 @@
 
 #include <iostream>
 
-constexpr int ArraySize {10};
-
-namespace e706 {
+namespace
+{
+//  Constant data:
+    constexpr int ArraySize {10};
+    
 //  Function names from the exercise are used:
     
     /**
@@ -27,8 +29,9 @@ namespace e706 {
     void reverseArray(double array[], int size);
 }
 
-using namespace e706;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show706()
 {
     double values[ArraySize];
@@ -45,45 +48,48 @@ void show706()
     std::cout << "\nDone.\n";
 }
 
-int e706::fillArray(double array[], int size)
+namespace
 {
-    int i {};
-    
-    std::cout << "Enter up to " << size << " numbers <q to stop>:\n";
-    while (i < size && (std::cin >> array[i]))
-        ++i;
-   
-    return i;
-}
-
-void e706::showArray(const double array[], int size)
-{
-    if (size == 0)
-        std::cout << "No data!\n";
-    else
+    int fillArray(double array[], int size)
     {
-        std::cout << array[0];
-        for (int i = 1; i < size; i++)
-            std::cout << "\t\t" << array[i];
-        std::cout << "\n";
-    }
-}
-
-void e706::reverseArray(double array[], int size)
-{
-    if (size == 0)
-        return;
-    else
-    {
-        int front, back;
+        int i {};
         
-        for (front = 0, back = size - 1;
-             front < back;
-             front++, back--)
+        std::cout << "Enter up to " << size << " numbers <q to stop>:\n";
+        while (i < size && (std::cin >> array[i]))
+            ++i;
+       
+        return i;
+    }
+
+    void showArray(const double array[], int size)
+    {
+        if (size == 0)
+            std::cout << "No data!\n";
+        else
         {
-            double temp {array[back]};
-            array[back] = array[front];
-            array[front] = temp;
+            std::cout << array[0];
+            for (int i = 1; i < size; i++)
+                std::cout << "\t\t" << array[i];
+            std::cout << "\n";
+        }
+    }
+
+    void reverseArray(double array[], int size)
+    {
+        if (size == 0)
+            return;
+        else
+        {
+            int front, back;
+            
+            for (front = 0, back = size - 1;
+                 front < back;
+                 front++, back--)
+            {
+                double temp {array[back]};
+                array[back] = array[front];
+                array[front] = temp;
+            }
         }
     }
 }

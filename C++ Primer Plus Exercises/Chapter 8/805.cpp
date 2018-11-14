@@ -8,16 +8,17 @@
 
 #include <iostream>
 
-constexpr int size {5};
-
-namespace e805
+namespace
 {
+    constexpr int size {5};
+    
     template <typename T>
     T max5(const T arr[]);
 }
 
-using namespace e805;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show805()
 {
     int test1[size] {23, 12, 1, -9, 0};
@@ -29,12 +30,15 @@ void show805()
     std::cout << "Max in char array:   " << max5(test3) << "\n";
 }
 
-template <typename T>
-T e805::max5(const T arr[])
+namespace
 {
-    T max = arr[0];
-    for (int i = 1; i < size; i++)
-        if (arr[i] > max) max = arr[i];
-    
-    return max;
+    template <typename T>
+    T max5(const T arr[])
+    {
+        T max = arr[0];
+        for (int i = 1; i < size; i++)
+            if (arr[i] > max) max = arr[i];
+        
+        return max;
+    }
 }

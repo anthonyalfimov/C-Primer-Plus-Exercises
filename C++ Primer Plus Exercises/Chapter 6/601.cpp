@@ -9,6 +9,9 @@
 #include <iostream>
 #include <cctype>
 
+//   =============================
+//   |       Main function       |
+//   =============================
 void show601()
 {
     std::cout << "Input characters. Type @ to finish.\n";

@@ -8,13 +8,14 @@
 
 #include <iostream>
 
-namespace e705
+namespace
 {
     unsigned long long factorial(unsigned);
 }
 
-using namespace e705;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show705()
 {
     std::cout << "Enter a number to calculate factorial <q to quit>:\n";
@@ -27,10 +28,13 @@ void show705()
     std::cout << "\nDone.\n";
 }
 
-unsigned long long e705::factorial(unsigned x)
+namespace
 {
-    if (x == 0)
-        return 1;
-    else
-        return x * e705::factorial(x - 1);
+    unsigned long long factorial(unsigned x)
+    {
+        if (x == 0)
+            return 1;
+        else
+            return x * factorial(x - 1);
+    }
 }

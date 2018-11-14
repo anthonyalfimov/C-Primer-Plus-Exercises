@@ -8,14 +8,15 @@
 
 #include <iostream>
 
-namespace e701
+namespace
 {
 //  Function prototypes
     double harmonicMean(double x, double y);
 }
 
-using namespace e701;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show701()
 {
     double x, y;
@@ -36,7 +37,10 @@ void show701()
     std::cout << "Done.\n";
 }
 
-double e701::harmonicMean(double x, double y)
+namespace
 {
-    return 2.0 * x * y / (x + y);
+    double harmonicMean(double x, double y)
+    {
+        return 2.0 * x * y / (x + y);
+    }
 }

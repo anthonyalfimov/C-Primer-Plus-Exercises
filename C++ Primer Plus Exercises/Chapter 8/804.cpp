@@ -9,7 +9,7 @@
 #include <iostream>
 #include <cstring>              // for strlen(), strcpy()
 
-namespace e804
+namespace
 {
     struct stringy
     {
@@ -23,8 +23,9 @@ namespace e804
     void show(const char * msg, int times = 1);
 }
 
-using namespace e804;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show804()
 {
     stringy beany;
@@ -43,23 +44,26 @@ void show804()
     delete [] beany.str;
 }
 
-void e804::set(stringy& dst, const char * src)
+namespace
 {
-    dst.length = std::strlen(src);
-    dst.str = new char [dst.length];
-    std::strcpy(dst.str, src);
-}
+    void set(stringy& dst, const char * src)
+    {
+        dst.length = std::strlen(src);
+        dst.str = new char [dst.length];
+        std::strcpy(dst.str, src);
+    }
 
-void e804::show(const stringy& msg, int times)
-{
-    for (; times > 0; times--)
-        std::cout << msg.str << "\n";
-    std::cout << "# ============================== #\n";
-}
+    void show(const stringy& msg, int times)
+    {
+        for (; times > 0; times--)
+            std::cout << msg.str << "\n";
+        std::cout << "# ============================== #\n";
+    }
 
-void e804::show(const char * msg, int times)
-{
-    for (; times > 0; times--)
-        std::cout << msg << "\n";
-    std::cout << "# ============================== #\n";
+    void show(const char * msg, int times)
+    {
+        for (; times > 0; times--)
+            std::cout << msg << "\n";
+        std::cout << "# ============================== #\n";
+    }
 }

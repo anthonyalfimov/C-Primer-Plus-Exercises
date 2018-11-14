@@ -10,11 +10,14 @@
 #include <string>
 #include <cctype>
 
-namespace e803
+namespace
 {
     void makeUpperCase(std::string & str);
 }
 
+//   =============================
+//   |       Main function       |
+//   =============================
 void show803()
 {
     std::string input;
@@ -23,7 +26,7 @@ void show803()
     std::getline(std::cin, input);
     while (std::cin && input != "q")
     {
-        e803::makeUpperCase(input);
+        makeUpperCase(input);
         std::cout << input << "\n";
         std::cout << "Next string (q to quit): ";
         std::getline(std::cin, input);
@@ -31,8 +34,11 @@ void show803()
     std::cout << "\nDone\n";
 }
 
-void e803::makeUpperCase(std::string & str)
+namespace
 {
-    for (int i = 0; i < str.length(); i++)
-        str[i] = std::toupper(str[i]);
+    void makeUpperCase(std::string & str)
+    {
+        for (int i = 0; i < str.length(); i++)
+            str[i] = std::toupper(str[i]);
+    }
 }

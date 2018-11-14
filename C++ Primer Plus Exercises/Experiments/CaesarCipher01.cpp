@@ -9,6 +9,9 @@
 
 constexpr int LetterCount {26};
 
+//   =============================
+//   |       Main function       |
+//   =============================
 void showCaesarCipher01()
 {
     std::cout << "Please, enter the shift: ";

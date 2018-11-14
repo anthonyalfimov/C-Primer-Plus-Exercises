@@ -8,10 +8,10 @@
 
 #include <iostream>
 
-constexpr int stringLenght {30};
-
-namespace e709
+namespace
 {
+    constexpr int stringLenght {30};
+    
     struct Student
     {
         char fullname[stringLenght];
@@ -25,8 +25,9 @@ namespace e709
     void display3(const Student pa[], int size);
 }
 
-using namespace e709;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show709()
 {
     std::cout << "Enter class size: ";
@@ -50,61 +51,64 @@ void show709()
     std::cout << "\nDone.\n";
 }
 
-int e709::getInfo(Student pa[], int size)
+namespace
 {
-    std::cout << "Enter information about students.\n"
-                 "Leave the name field blank to terminate input.\n";
-    
-    int i;   // array iterator
-    for (i = 0; i < size; i++)
+    int getInfo(Student pa[], int size)
     {
-        std::cout << "Student #" << i + 1 << "\n";
+        std::cout << "Enter information about students.\n"
+                     "Leave the name field blank to terminate input.\n";
         
-        std::cout << "Full name: ";
-        std::cin.getline(pa[i].fullname, stringLenght);
-        if (pa[i].fullname[0] == '\0')          // terminate on empty line
-            break;
-        
-        std::cout << "Hobby: ";
-        std::cin.getline(pa[i].hobby, stringLenght);
-        
-        std::cout << "OOP Level: ";
-        while (!(std::cin >> pa[i].oopLevel) || pa[i].oopLevel < 0)
+        int i;   // array iterator
+        for (i = 0; i < size; i++)
         {
-            std::cout << "Bad input, try again: ";
-            if (!std::cin)                      // on bad input, clear the failbit
-                std::cin.clear();
-            while (std::cin.get() != '\n')      // clear input buffer in both cases
+            std::cout << "Student #" << i + 1 << "\n";
+            
+            std::cout << "Full name: ";
+            std::cin.getline(pa[i].fullname, stringLenght);
+            if (pa[i].fullname[0] == '\0')          // terminate on empty line
+                break;
+            
+            std::cout << "Hobby: ";
+            std::cin.getline(pa[i].hobby, stringLenght);
+            
+            std::cout << "OOP Level: ";
+            while (!(std::cin >> pa[i].oopLevel) || pa[i].oopLevel < 0)
+            {
+                std::cout << "Bad input, try again: ";
+                if (!std::cin)                      // on bad input, clear the failbit
+                    std::cin.clear();
+                while (std::cin.get() != '\n')      // clear input buffer in both cases
+                    continue;
+            }
+            while (std::cin.get() != '\n')          // clear input buffer after using `cin >>`
                 continue;
         }
-        while (std::cin.get() != '\n')          // clear input buffer after using `cin >>`
-            continue;
+        
+        return i;
     }
-    
-    return i;
-}
 
-void e709::display1(Student st)
-{
-    std::cout
-        << st.fullname << "\n"
-        << "Hobby: " << st.hobby << "\n"
-        << "OOP Level: " << st.oopLevel << "\n";
-}
-
-void e709::display2(const Student* pst)
-{
-    std::cout
-        << pst->fullname << "\n"
-        << "Hobby: " << pst->hobby << "\n"
-        << "OOP Level: " << pst->oopLevel << "\n";
-}
-
-void e709::display3(const Student pa[], int n)
-{
-    for (int i = 0; i < n; i++)
+    void display1(Student st)
     {
-        e709::display1(pa[i]);
-        std::cout << "\n";
+        std::cout
+            << st.fullname << "\n"
+            << "Hobby: " << st.hobby << "\n"
+            << "OOP Level: " << st.oopLevel << "\n";
+    }
+
+    void display2(const Student* pst)
+    {
+        std::cout
+            << pst->fullname << "\n"
+            << "Hobby: " << pst->hobby << "\n"
+            << "OOP Level: " << pst->oopLevel << "\n";
+    }
+
+    void display3(const Student pa[], int n)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            display1(pa[i]);
+            std::cout << "\n";
+        }
     }
 }

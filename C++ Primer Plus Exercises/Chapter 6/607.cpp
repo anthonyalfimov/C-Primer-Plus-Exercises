@@ -12,13 +12,14 @@
 
 const std::string sentinel {"q"};
 
-namespace e607
+namespace
 {
     bool isVowel(char);
 }
 
-using namespace e607;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show607()
 {
     int countVowel {};
@@ -45,14 +46,17 @@ void show607()
     << countOther << " others.\n";
 }
 
-bool e607::isVowel(char ch)
+namespace
 {
-    ch = std::tolower(ch);
-    return
-    ch == 'a' ||
-    ch == 'e' ||
-    ch == 'i' ||
-    ch == 'o' ||
-    ch == 'u' ||
-    ch == 'y';
+    bool isVowel(char ch)
+    {
+        ch = std::tolower(ch);
+        return
+        ch == 'a' ||
+        ch == 'e' ||
+        ch == 'i' ||
+        ch == 'o' ||
+        ch == 'u' ||
+        ch == 'y';
+    }
 }

@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-namespace e704
+namespace
 {
     /**
      @param numbers total number of available choices
@@ -20,8 +20,9 @@ namespace e704
     void badInputCleanup();
 }
 
-using namespace e704;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show704()
 {
     int fieldNumbers, fieldPicks;    // stats for field numbers
@@ -50,27 +51,30 @@ void show704()
     std::cout << "\nDone.\n";
 }
 
-// Calculates probability of picking `picks` numbers correctly
-// from `numbers` choices
-long double e704::probability(unsigned numbers, unsigned picks)
+namespace
 {
-    long double result {1.0};
-    long double n;
-    unsigned p;
-    
-    for (n = numbers, p = picks; p > 0; n--, p--)
-        result *= n / p;
-    
-    return result;
-}
-
-void e704::badInputCleanup()
-{
-    std::cout << "Bad input. Try again:\n";
-    if (!std::cin)
+    // Calculates probability of picking `picks` numbers correctly
+    // from `numbers` choices
+    long double probability(unsigned numbers, unsigned picks)
     {
-        std::cin.clear();
-        while (std::cin.get() != '\n')
-            continue;
+        long double result {1.0};
+        long double n;
+        unsigned p;
+        
+        for (n = numbers, p = picks; p > 0; n--, p--)
+            result *= n / p;
+        
+        return result;
+    }
+
+    void badInputCleanup()
+    {
+        std::cout << "Bad input. Try again:\n";
+        if (!std::cin)
+        {
+            std::cin.clear();
+            while (std::cin.get() != '\n')
+                continue;
+        }
     }
 }

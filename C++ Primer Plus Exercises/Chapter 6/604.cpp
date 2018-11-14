@@ -9,11 +9,12 @@
 #include <iostream>
 #include <cctype>
 
-constexpr int StrSize {50};
-constexpr int MemberCount {4};
-
-namespace e604
+namespace
 {
+//  Constant data
+    constexpr int StrSize {50};
+    constexpr int MemberCount {4};
+    
 //  Benevolent Order of Programmers name structure
     struct Bop
     {
@@ -28,44 +29,44 @@ namespace e604
 //  Function prototypes
     void showMenu();
     char getCharacter();
-    bool isGoodInput(char);
     
     void displayFullname();
     void displayTitle();
     void displayBopname();
     void displayPreference();
+    
+    const Bop members[MemberCount]
+    {
+        {
+            "Boris Forest",
+            "CEO",
+            "FluffyTat",
+            bopname
+        },
+        {
+            "Judy Froo",
+            "PA",
+            "SexyBun5000",
+            fullname
+        },
+        {
+            "John Ohh",
+            "Junior Developer",
+            "JUNI0R",
+            title
+        },
+        {
+            "Too Faa",
+            "Senior Developer",
+            "Foo",
+            title
+        }
+    };
 }
 
-using namespace e604;
-
-const Bop members[MemberCount]
-{
-    {
-        "Boris Forest",
-        "CEO",
-        "FluffyTat",
-        bopname
-    },
-    {
-        "Judy Froo",
-        "PA",
-        "SexyBun5000",
-        fullname
-    },
-    {
-        "John Ohh",
-        "Junior Developer",
-        "JUNI0R",
-        title
-    },
-    {
-        "Too Faa",
-        "Senior Developer",
-        "Foo",
-        title
-    }
-};
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show604()
 {
     std::cout << "Benevolent Order of Programmers report\n";
@@ -86,61 +87,59 @@ void show604()
     std::cout << "Done!\n";
 }
 
-void e604::displayFullname()
+namespace
 {
-    for (int i = 0; i < MemberCount; ++i)
+    void displayFullname()
     {
-        std::cout << members[i].fullname << "\n";
-    }
-}
-
-void e604::displayTitle()
-{
-    for (int i = 0; i < MemberCount; ++i)
-    {
-        std::cout << members[i].title << "\n";
-    }
-}
-
-void e604::displayBopname()
-{
-    for (int i = 0; i < MemberCount; ++i)
-    {
-        std::cout << members[i].bopname << "\n";
-    }
-}
-
-void e604::displayPreference()
-{
-    for (int i = 0; i < MemberCount; ++i)
-    {
-        switch (members[i].preference)
+        for (int i = 0; i < MemberCount; ++i)
         {
-            case fullname   : std::cout << members[i].fullname << "\n"; break;
-            case title      : std::cout << members[i].title << "\n"; break;
-            case bopname    : std::cout << members[i].bopname << "\n"; break;
+            std::cout << members[i].fullname << "\n";
         }
     }
-}
-
-char e604::getCharacter()
-{
-//  showTheMenu();                  // Add to display menu every time input is prompted
-    std::cout << "\nYour choice: ";
-    return std::tolower(std::cin.get());
-}
-
-bool e604::isGoodInput(char ch)
-{
-    return (ch >= 'a' && ch <= 'd') || ch == 'q';
-}
-
-void e604::showMenu()
-{
-    std::cout <<
-    "===================================================\n"
-    "a) display by name         b) display by title\n"
-    "c) display by bopname      d) display by preference\n"
-    "q) quit\n"
-    "===================================================\n";
+    
+    void displayTitle()
+    {
+        for (int i = 0; i < MemberCount; ++i)
+        {
+            std::cout << members[i].title << "\n";
+        }
+    }
+    
+    void displayBopname()
+    {
+        for (int i = 0; i < MemberCount; ++i)
+        {
+            std::cout << members[i].bopname << "\n";
+        }
+    }
+    
+    void displayPreference()
+    {
+        for (int i = 0; i < MemberCount; ++i)
+        {
+            switch (members[i].preference)
+            {
+                case fullname   : std::cout << members[i].fullname << "\n"; break;
+                case title      : std::cout << members[i].title << "\n"; break;
+                case bopname    : std::cout << members[i].bopname << "\n"; break;
+            }
+        }
+    }
+    
+    char getCharacter()
+    {
+    //  showTheMenu();                  // Add to display menu every time input is prompted
+        std::cout << "\nYour choice: ";
+        return std::tolower(std::cin.get());
+    }
+    
+    void showMenu()
+    {
+        std::cout <<
+        "===================================================\n"
+        "a) display by name         b) display by title\n"
+        "c) display by bopname      d) display by preference\n"
+        "q) quit\n"
+        "===================================================\n";
+    }
 }

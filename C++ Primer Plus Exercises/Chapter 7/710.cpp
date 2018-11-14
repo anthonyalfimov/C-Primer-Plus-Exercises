@@ -8,16 +8,19 @@
 
 #include <iostream>
 
-constexpr int opNumber {4};
-const char* opNames[opNumber]
-{
-    "Sum: ",
-    "Difference: ",
-    "Product: ",
-    "Quotient: "
-};
 
-namespace e710 {
+namespace
+{
+//  Constant data:
+    constexpr int opNumber {4};
+    const char* const opNames[opNumber]
+    {
+        "Sum: ",
+        "Difference: ",
+        "Product: ",
+        "Quotient: "
+    };
+    
 //  Calculation functions:
     typedef double (*pcalc)(double, double);
     
@@ -29,8 +32,9 @@ namespace e710 {
     double calculate(double x, double y, pcalc operation);
 }
 
-using namespace e710;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show710()
 {
     pcalc operations[opNumber]             // array of function pointers to operations
@@ -47,7 +51,10 @@ void show710()
     std::cout << "\nDone.\n";
 }
 
-double e710::calculate(double x, double y, pcalc operation)
+namespace
 {
-    return operation(x, y);
+    double calculate(double x, double y, pcalc operation)
+    {
+        return operation(x, y);
+    }
 }

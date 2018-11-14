@@ -6,14 +6,14 @@
 //  Copyright © 2018 Anthony. All rights reserved.
 //
 //
-//==================================================================
-// |                                                               |
-// |  This program reads a text file containing lines of integers  |
-// |  Each line contains a different number of integers (or none)  |
-// |  Non-integer value terminate input; empty lines are ignored   |
-// |  The program then reports back the read integers              |
-// |                                                               |
-//==================================================================
+//   =================================================================
+//   |                                                               |
+//   |  This program reads a text file containing lines of integers  |
+//   |  Each line contains a different number of integers (or none)  |
+//   |  Non-integer value terminate input; empty lines are ignored   |
+//   |  The program then reports back the read integers              |
+//   |                                                               |
+//   =================================================================
 
 #include <iostream>
 #include <fstream>
@@ -23,6 +23,9 @@
 const char* filepath {"test.txt"};
 constexpr int MaxLines {20};
 
+//   =============================
+//   |       Main function       |
+//   =============================
 void showReadToVector01()
 {
 //    Open file

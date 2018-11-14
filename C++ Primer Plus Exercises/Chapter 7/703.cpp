@@ -8,10 +8,10 @@
 
 #include <iostream>
 
-constexpr int markerLength {40};
-
-namespace e703
+namespace
 {
+    constexpr int markerLength {40};
+    
     struct Box
     {
         char marker[markerLength];
@@ -26,8 +26,9 @@ namespace e703
     void displayBox(Box);
 }
 
-using namespace e703;
-
+//   =============================
+//   |       Main function       |
+//   =============================
 void show703()
 {
     Box package
@@ -44,20 +45,23 @@ void show703()
     std::cout << "\nDone.\n";
 }
 
-void e703::setBoxVolume(Box* pb)
+namespace
 {
-    pb->volume = pb->height * pb->width * pb->length;
-}
+    void setBoxVolume(Box* pb)
+    {
+        pb->volume = pb->height * pb->width * pb->length;
+    }
 
-void e703::displayBox(Box b)
-{
-    std::cout
-        << "Box: " << b.marker << "\n"
-        << "Dimensions: "
-        << b.height << " x " << b.width << " x " << b.length << "\n"
-        << "Volume: ";
-    if (b.volume)
-        std::cout << b.volume << "\n";
-    else
-        std::cout << "Not calculated.\n";
+    void displayBox(Box b)
+    {
+        std::cout
+            << "Box: " << b.marker << "\n"
+            << "Dimensions: "
+            << b.height << " x " << b.width << " x " << b.length << "\n"
+            << "Volume: ";
+        if (b.volume)
+            std::cout << b.volume << "\n";
+        else
+            std::cout << "Not calculated.\n";
+    }
 }
