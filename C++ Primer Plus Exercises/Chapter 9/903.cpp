@@ -22,9 +22,12 @@ namespace
     
     // Amount of bytes needed to store required amount of Chaff structs:
     constexpr int bufferSize {structCount * sizeof(Chaff)};
-    // NOTE: sizeof is a compile-time operator, so if an executable compiled on one platform
-    //    is run on another platform this code can lead to issues (if filetype sizes are different).
-    //    Better use a buffer size based on the maximum possible struct size?
+    // NOTE: this code is not portable -
+    //    `sizeof` is a compile-time operator, so if an executable is compiled
+    //    on one platform and is run on another platform, this code can lead to
+    //    out of bounds memory access (if filetype sizes are different b/w platforms).
+    //
+    // Better use a buffer size based on the maximum possible struct size?
     
 //  Function prototype
     void showChaff(const Chaff&);
