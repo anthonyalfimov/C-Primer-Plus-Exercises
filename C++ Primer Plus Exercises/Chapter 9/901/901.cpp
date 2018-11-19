@@ -9,7 +9,7 @@
 #include <iostream>
 #include "golf.hpp"
 
-const int clubMaxSize {5};
+const int maxClubSize {5};
 
 //   =============================
 //   |       Main function       |
@@ -26,23 +26,22 @@ void show901()
     
     std::cout << "\n";
     
-    Golf club[clubMaxSize];
-    int clubSize {0};                   // actual number of entires
-    for (int i = 0; i < clubMaxSize; i++)
+    Golf club[maxClubSize];
+    int count;                      // actual number of entires
+    for (count = 0; count < maxClubSize; count++)
     {
         std::cout
-            << "Enter data for golfer #" << i + 1
-            << " of " << clubMaxSize << " (empty line to stop):\n";
-        if (!setGolf(club[i]))
+            << "Enter data for golfer #" << count + 1
+            << " of " << maxClubSize << " (empty line to stop):\n";
+        if (!setGolf(club[count]))
             break;
-        clubSize = i + 1;               // on succesful input, update actual number of entries
     }
-    if (clubSize == 0)
+    if (count == 0)
         std::cout << "\n> No entries.\n";
     else
     {
-        std::cout << "\n> Read " << clubSize << " entries.\n";
-        for (int i = 0; i < clubSize; i++)
+        std::cout << "\n> Read " << count << " entries.\n";
+        for (int i = 0; i < count; i++)
             showGolf(club[i]);
     }
     
