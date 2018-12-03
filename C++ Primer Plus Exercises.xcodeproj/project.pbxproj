@@ -12,6 +12,7 @@
 		3A2FC6AB21B5837900EEE2FE /* BankAccount1001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6A921B5837900EEE2FE /* BankAccount1001.cpp */; };
 		3A2FC6AD21B5896800EEE2FE /* 1001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6AC21B5896800EEE2FE /* 1001.cpp */; };
 		3A2FC6B121B5975200EEE2FE /* Person1002.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6AF21B5975200EEE2FE /* Person1002.cpp */; };
+		3A2FC6B321B59B5400EEE2FE /* 1002.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6B221B59B5400EEE2FE /* 1002.cpp */; };
 		3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */; };
 		3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */; };
 		3A78C6C4216F840A00549680 /* 707.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A78C6C2216F840A00549680 /* 707.cpp */; };
@@ -63,6 +64,7 @@
 		3A2FC6AC21B5896800EEE2FE /* 1001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1001.cpp; sourceTree = "<group>"; };
 		3A2FC6AF21B5975200EEE2FE /* Person1002.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person1002.cpp; sourceTree = "<group>"; };
 		3A2FC6B021B5975200EEE2FE /* Person1002.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person1002.hpp; sourceTree = "<group>"; };
+		3A2FC6B221B59B5400EEE2FE /* 1002.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1002.cpp; sourceTree = "<group>"; };
 		3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReadToVector01.cpp; sourceTree = "<group>"; };
 		3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CaesarCipher01.cpp; sourceTree = "<group>"; };
 		3A65668B21592D9300ACDA13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				3A2FC6AF21B5975200EEE2FE /* Person1002.cpp */,
 				3A2FC6B021B5975200EEE2FE /* Person1002.hpp */,
+				3A2FC6B221B59B5400EEE2FE /* 1002.cpp */,
 			);
 			path = 1002;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				3AF5FDDF2188B6B7009EDC30 /* 806.cpp in Sources */,
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
 				3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */,
+				3A2FC6B321B59B5400EEE2FE /* 1002.cpp in Sources */,
 				3AF5FDD321889D30009EDC30 /* 802.cpp in Sources */,
 				3AF25BDB216E56AF0044A953 /* 706.cpp in Sources */,
 				3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */,
