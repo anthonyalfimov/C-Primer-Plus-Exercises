@@ -6,6 +6,7 @@
 //  Copyright © 2018 Anthony. All rights reserved.
 //
 
+#include <iostream>
 #include <cstring>
 #include "BankAccount1001.hpp"
 
