@@ -6,7 +6,7 @@
 //  Copyright © 2018 Anthony. All rights reserved.
 //
 
-#include "Sales.hpp"
+#include "Sales904.hpp"
 #include <iostream>
 
 namespace SALES

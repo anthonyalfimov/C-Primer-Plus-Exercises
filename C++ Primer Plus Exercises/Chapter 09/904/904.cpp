@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "Sales.hpp"
+#include "Sales904.hpp"
 
 //   =============================
 //   |       Main function       |
