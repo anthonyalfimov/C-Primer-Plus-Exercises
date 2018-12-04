@@ -16,6 +16,8 @@
 		3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */; };
 		3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */; };
 		3A78C6C4216F840A00549680 /* 707.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A78C6C2216F840A00549680 /* 707.cpp */; };
+		3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8521B69579005FA9F3 /* golf1003.cpp */; };
+		3A7C1A8921B69CB6005FA9F3 /* 1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8821B69CB6005FA9F3 /* 1003.cpp */; };
 		3A9C17AF216F8B8100F99D49 /* 708a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C17AD216F8B8100F99D49 /* 708a.cpp */; };
 		3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415B215BB0CB00BBB074 /* 604.cpp */; };
 		3AAA4160215BE02B00BBB074 /* 607.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415E215BE02B00BBB074 /* 607.cpp */; };
@@ -69,6 +71,9 @@
 		3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CaesarCipher01.cpp; sourceTree = "<group>"; };
 		3A65668B21592D9300ACDA13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A78C6C2216F840A00549680 /* 707.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 707.cpp; sourceTree = "<group>"; };
+		3A7C1A8521B69579005FA9F3 /* golf1003.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = golf1003.cpp; sourceTree = "<group>"; };
+		3A7C1A8621B69579005FA9F3 /* golf1003.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = golf1003.hpp; sourceTree = "<group>"; };
+		3A7C1A8821B69CB6005FA9F3 /* 1003.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1003.cpp; sourceTree = "<group>"; };
 		3A9C17AD216F8B8100F99D49 /* 708a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 708a.cpp; sourceTree = "<group>"; };
 		3AAA415B215BB0CB00BBB074 /* 604.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 604.cpp; sourceTree = "<group>"; };
 		3AAA415E215BE02B00BBB074 /* 607.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 607.cpp; sourceTree = "<group>"; };
@@ -136,6 +141,7 @@
 			children = (
 				3A2FC6A821B5834500EEE2FE /* 1001 */,
 				3A2FC6AE21B5970C00EEE2FE /* 1002 */,
+				3A7C1A8421B6955F005FA9F3 /* 1003 */,
 			);
 			path = "Chapter 10";
 			sourceTree = "<group>";
@@ -167,6 +173,16 @@
 				3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */,
 			);
 			path = Experiments;
+			sourceTree = "<group>";
+		};
+		3A7C1A8421B6955F005FA9F3 /* 1003 */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C1A8521B69579005FA9F3 /* golf1003.cpp */,
+				3A7C1A8621B69579005FA9F3 /* golf1003.hpp */,
+				3A7C1A8821B69CB6005FA9F3 /* 1003.cpp */,
+			);
+			path = 1003;
 			sourceTree = "<group>";
 		};
 		3AD3ED8920EBD8F3008D28BF = {
@@ -318,6 +334,7 @@
 				3A2FC6B321B59B5400EEE2FE /* 1002.cpp in Sources */,
 				3AF5FDD321889D30009EDC30 /* 802.cpp in Sources */,
 				3AF25BDB216E56AF0044A953 /* 706.cpp in Sources */,
+				3A7C1A8921B69CB6005FA9F3 /* 1003.cpp in Sources */,
 				3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */,
 				3AD6B01821A30EF500A344EA /* 904.cpp in Sources */,
 				3AD3ED9620EBD8F3008D28BF /* main.cpp in Sources */,
@@ -342,6 +359,7 @@
 				3AF5FDE22188BD10009EDC30 /* 807.cpp in Sources */,
 				3AF25BD8216E48F10044A953 /* 705.cpp in Sources */,
 				3AC393C1216F8DE800723A1B /* 708b.cpp in Sources */,
+				3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */,
 				3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
