@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "golf.hpp"
+#include "golf901.hpp"
 
 const int maxClubSize {5};
 
