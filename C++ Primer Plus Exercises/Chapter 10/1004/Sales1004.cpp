@@ -45,7 +45,10 @@ namespace SALES
     {
         int count {size < quaters ? size : quaters};    // number of elements to copy over
         for (int i = 0; i < count; i++)
-            m_sales[i] = data[i];
+            if (data[i] < 0)                            // don't allow negative entries
+                m_sales[i] = 0;
+            else
+                m_sales[i] = data[i];
  
         update(count);                                  // update stats based on the copied data
     }

@@ -26,17 +26,9 @@ namespace SALES
         double m_min;
         
 //      Implementation methods:
-        void init()
-        {
-            for (int i = 0; i < quaters; i++)
-                m_sales[i] = 0;
-            m_average = 0;
-            m_max = 0;
-            m_min = 0;
-        }
-        
         /**
-         Updates average, minimum and maximum sales
+         Updates average, minimum and maximum sales and marks unused entries
+         as invalid
 
          @param entries Number of first sales entries to use for update
          */
@@ -49,7 +41,7 @@ namespace SALES
         
     public:
 //      Constructors:
-        Sales() { init(); };                    // Default
+        Sales() { update(0); }                  // initialize to no valid entries
         Sales(const double data[], int size);
         
 //      Methods:
