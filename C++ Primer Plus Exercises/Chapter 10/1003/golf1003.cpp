@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include <cstring>
+#include <string>
 #include "golf1003.hpp"
 
 
@@ -22,18 +22,19 @@ Golf::Golf(const char *fullName, int handicap)
 
 bool Golf::set()
 {
+    std::string fullName;
+    int handicap;
+    
     std::cout << "Full name: ";
-    if (!std::cin.get(m_fullName, nameLength))      // if an empty string is read
+    if (!std::getline(std::cin, fullName) || fullName == "")
+                                                    // on fail or if an empty string is read
     {
         std::cin.clear();                           // clear failbit
-        std::cin.get();                             // read trailing '\n'
         return false;                               // report reading empty string
     }
     
-    clearInputBuffer();                             // remove leftover input and '\n' from buffer
-    
     std::cout << "Handicap: ";
-    while (!(std::cin >> m_handicap) || m_handicap < 0)
+    while (!(std::cin >> handicap) || handicap < 0)
     {
         std::cout << "Invalid input, try again: ";
         std::cin.clear();                           // in case failbit was set, clear it
@@ -41,6 +42,7 @@ bool Golf::set()
     }
     
     clearInputBuffer();                             // remove leftover input
+    *this = Golf(fullName.c_str(), handicap);       // use constructor as required by the exercise
     return true;                                    // report successful input
 }
 
