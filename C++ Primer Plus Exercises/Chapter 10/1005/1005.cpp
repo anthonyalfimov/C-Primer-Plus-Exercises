@@ -7,11 +7,14 @@
 //
 
 #include <iostream>
+#include <cstdlib>          // support for exit()
 #include "1005.hpp"         // Customer struct declaration
 #include "Stack1005.hpp"    // Stack class declaration
 
 namespace e1005
 {
+    // NOTE: this requires at least a '\n' to be left in the stream,
+    //     otherwise it gets stuck in an endless loop. Don't use in case of EOF
     void clearInputBuffer() { while (std::cin.get() != '\n') continue; }
     
     /**
@@ -79,7 +82,8 @@ namespace e1005
         Customer input;
         std::cout << "Full name: ";
         if (!std::cin.getline(input.fullName, nameLength))  // If the name didn't fit,
-        {                                                   //     assuming we don't encounter EOF
+        {
+            if (std::cin.eof()) exit(EXIT_FAILURE);         // Not dealing with EOF
             std::cin.clear();
             clearInputBuffer();                             // clear input leftovers
             std::cout << "Name is too long! Truncated to "
@@ -89,6 +93,7 @@ namespace e1005
         std::cout << "Payment: ";
         while (!(std::cin >> input.payment) || input.payment < 0)
         {
+            if (std::cin.eof()) exit(EXIT_FAILURE);         // Not dealing with EOF
             std::cout << "Invalid input, try again\nPayment: ";
             std::cin.clear();                               // Reset failbit in case it was set
             clearInputBuffer();                             // clear input leftovers
