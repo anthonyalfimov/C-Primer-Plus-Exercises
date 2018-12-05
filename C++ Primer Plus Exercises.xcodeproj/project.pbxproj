@@ -15,6 +15,8 @@
 		3A2FC6B321B59B5400EEE2FE /* 1002.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6B221B59B5400EEE2FE /* 1002.cpp */; };
 		3A49E85121B7E211004CC9C7 /* Plorg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E84F21B7E211004CC9C7 /* Plorg.cpp */; };
 		3A49E85321B7E792004CC9C7 /* 1007.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85221B7E792004CC9C7 /* 1007.cpp */; };
+		3A49E85721B8009A004CC9C7 /* SimpleListA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85521B8009A004CC9C7 /* SimpleListA.cpp */; };
+		3A49E85921B809EE004CC9C7 /* 1008a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85821B809EE004CC9C7 /* 1008a.cpp */; };
 		3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */; };
 		3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */; };
 		3A78C6C4216F840A00549680 /* 707.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A78C6C2216F840A00549680 /* 707.cpp */; };
@@ -78,6 +80,9 @@
 		3A49E84F21B7E211004CC9C7 /* Plorg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plorg.cpp; sourceTree = "<group>"; };
 		3A49E85021B7E211004CC9C7 /* Plorg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Plorg.hpp; sourceTree = "<group>"; };
 		3A49E85221B7E792004CC9C7 /* 1007.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1007.cpp; sourceTree = "<group>"; };
+		3A49E85521B8009A004CC9C7 /* SimpleListA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleListA.cpp; sourceTree = "<group>"; };
+		3A49E85621B8009A004CC9C7 /* SimpleListA.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimpleListA.hpp; sourceTree = "<group>"; };
+		3A49E85821B809EE004CC9C7 /* 1008a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1008a.cpp; sourceTree = "<group>"; };
 		3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReadToVector01.cpp; sourceTree = "<group>"; };
 		3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CaesarCipher01.cpp; sourceTree = "<group>"; };
 		3A65668B21592D9300ACDA13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -167,6 +172,7 @@
 				3A7C1A9021B6CDE4005FA9F3 /* 1005 */,
 				3A7C1A9721B6E468005FA9F3 /* 1006 */,
 				3A49E84E21B7E1FB004CC9C7 /* 1007 */,
+				3A49E85421B80072004CC9C7 /* 1008a */,
 			);
 			path = "Chapter 10";
 			sourceTree = "<group>";
@@ -199,6 +205,16 @@
 				3A49E85221B7E792004CC9C7 /* 1007.cpp */,
 			);
 			path = 1007;
+			sourceTree = "<group>";
+		};
+		3A49E85421B80072004CC9C7 /* 1008a */ = {
+			isa = PBXGroup;
+			children = (
+				3A49E85521B8009A004CC9C7 /* SimpleListA.cpp */,
+				3A49E85621B8009A004CC9C7 /* SimpleListA.hpp */,
+				3A49E85821B809EE004CC9C7 /* 1008a.cpp */,
+			);
+			path = 1008a;
 			sourceTree = "<group>";
 		};
 		3A68487C215126EB004C5F68 /* Experiments */ = {
@@ -401,6 +417,7 @@
 				3AF5FDD321889D30009EDC30 /* 802.cpp in Sources */,
 				3A49E85121B7E211004CC9C7 /* Plorg.cpp in Sources */,
 				3AF25BDB216E56AF0044A953 /* 706.cpp in Sources */,
+				3A49E85721B8009A004CC9C7 /* SimpleListA.cpp in Sources */,
 				3A7C1A9A21B6E480005FA9F3 /* Move1006.cpp in Sources */,
 				3A7C1A8921B69CB6005FA9F3 /* 1003.cpp in Sources */,
 				3A7C1A8D21B6AFCD005FA9F3 /* Sales1004.cpp in Sources */,
@@ -408,6 +425,7 @@
 				3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */,
 				3AD6B01821A30EF500A344EA /* 904.cpp in Sources */,
 				3AD3ED9620EBD8F3008D28BF /* main.cpp in Sources */,
+				3A49E85921B809EE004CC9C7 /* 1008a.cpp in Sources */,
 				3AF5FDD92188AA9A009EDC30 /* 804.cpp in Sources */,
 				3AC393C4216F95B100723A1B /* 709.cpp in Sources */,
 				3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */,
