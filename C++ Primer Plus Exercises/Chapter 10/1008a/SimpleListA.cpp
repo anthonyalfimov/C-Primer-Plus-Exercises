@@ -10,15 +10,6 @@
 
 namespace e1008a
 {
-    List::List()
-    {
-        m_end = 0;
-    }
-    
-    List::~List()
-    {
-    }
-    
     bool List::add(const Item& item)
     {
         if (m_end < maxItems)
@@ -29,16 +20,6 @@ namespace e1008a
         }
         else
             return false;
-    }
-    
-    bool List::isEmpty() const
-    {
-        return m_end == 0;
-    }
-    
-    bool List::isFull() const
-    {
-        return m_end == maxItems;
     }
     
     void List::process(void (*op)(Item&))
