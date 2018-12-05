@@ -53,14 +53,14 @@ void show1005()
         {
             case 'A':
                 if (custromers.isFull())
-                    std::cout << "Stack is already full!\n";
+                    std::cout << "[i] Stack is already full!\n";
                 else
                     addCustomer(custromers);
                 break;
                 
             case 'P':
                 if (custromers.isEmpty())
-                    std::cout << "Stack is already empty!\n";
+                    std::cout << "[i] Stack is already empty!\n";
                 else
                 {
                     total += processCustomer(custromers);
@@ -83,7 +83,11 @@ namespace e1005
         std::cout << "Full name: ";
         if (!std::cin.getline(input.fullName, nameLength))  // If the name didn't fit,
         {
-            if (std::cin.eof()) exit(EXIT_FAILURE);         // Not dealing with EOF
+            if (std::cin.eof())                             // Fail out of the program on EOF
+            {
+                std::cout << "\n[!] EOF enountered\n";
+                exit(EXIT_FAILURE);
+            }
             std::cin.clear();
             clearInputBuffer();                             // clear input leftovers
             std::cout << "Name is too long! Truncated to "
@@ -93,7 +97,11 @@ namespace e1005
         std::cout << "Payment: ";
         while (!(std::cin >> input.payment) || input.payment < 0)
         {
-            if (std::cin.eof()) exit(EXIT_FAILURE);         // Not dealing with EOF
+            if (std::cin.eof())                             // Fail out of the program on EOF
+            {
+                std::cout << "\n[!] EOF enountered\n";
+                exit(EXIT_FAILURE);
+            }
             std::cout << "Invalid input, try again\nPayment: ";
             std::cin.clear();                               // Reset failbit in case it was set
             clearInputBuffer();                             // clear input leftovers
