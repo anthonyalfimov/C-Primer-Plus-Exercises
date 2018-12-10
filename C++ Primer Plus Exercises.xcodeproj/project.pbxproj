@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A047DE6219EDE5600245EE1 /* 901.cpp */; };
 		3A047DEB219EDE6500245EE1 /* golf901.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A047DE9219EDE6500245EE1 /* golf901.cpp */; };
+		3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */; };
+		3A24FC1E21BEA7DB00EB1EB2 /* LinkedList01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */; };
 		3A2FC6AB21B5837900EEE2FE /* BankAccount1001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6A921B5837900EEE2FE /* BankAccount1001.cpp */; };
 		3A2FC6AD21B5896800EEE2FE /* 1001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6AC21B5896800EEE2FE /* 1001.cpp */; };
 		3A2FC6B121B5975200EEE2FE /* Person1002.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6AF21B5975200EEE2FE /* Person1002.cpp */; };
@@ -73,6 +75,9 @@
 		3A047DE6219EDE5600245EE1 /* 901.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 901.cpp; sourceTree = "<group>"; };
 		3A047DE9219EDE6500245EE1 /* golf901.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = golf901.cpp; sourceTree = "<group>"; };
 		3A047DEA219EDE6500245EE1 /* golf901.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = golf901.hpp; sourceTree = "<group>"; };
+		3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListType01.cpp; sourceTree = "<group>"; };
+		3A24FC1B21BEA7C800EB1EB2 /* LinkedListType01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListType01.hpp; sourceTree = "<group>"; };
+		3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList01.cpp; sourceTree = "<group>"; };
 		3A2FC6A921B5837900EEE2FE /* BankAccount1001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BankAccount1001.cpp; sourceTree = "<group>"; };
 		3A2FC6AA21B5837900EEE2FE /* BankAccount1001.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BankAccount1001.hpp; sourceTree = "<group>"; };
 		3A2FC6AC21B5896800EEE2FE /* 1001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1001.cpp; sourceTree = "<group>"; };
@@ -165,6 +170,24 @@
 				3A047DEA219EDE6500245EE1 /* golf901.hpp */,
 			);
 			path = 901;
+			sourceTree = "<group>";
+		};
+		3A24FC1821BEA76B00EB1EB2 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				3A24FC1921BEA78700EB1EB2 /* LinkedList01 */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		3A24FC1921BEA78700EB1EB2 /* LinkedList01 */ = {
+			isa = PBXGroup;
+			children = (
+				3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */,
+				3A24FC1B21BEA7C800EB1EB2 /* LinkedListType01.hpp */,
+				3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */,
+			);
+			path = LinkedList01;
 			sourceTree = "<group>";
 		};
 		3A2FC6A721B5833200EEE2FE /* Chapter 10 */ = {
@@ -309,6 +332,7 @@
 				3A047DE4219EDE2F00245EE1 /* Chapter 09 */,
 				3A2FC6A721B5833200EEE2FE /* Chapter 10 */,
 				3A68487C215126EB004C5F68 /* Experiments */,
+				3A24FC1821BEA76B00EB1EB2 /* Data Structures */,
 				3AD3ED9520EBD8F3008D28BF /* main.cpp */,
 				3AD6B01221A2FE2D00A344EA /* Contents.hpp */,
 			);
@@ -426,6 +450,8 @@
 				3AF5FDDC2188B3AC009EDC30 /* 805.cpp in Sources */,
 				3AF25BD5216E41150044A953 /* 704.cpp in Sources */,
 				3AD6B01621A30EE800A344EA /* Sales904.cpp in Sources */,
+				3A24FC1E21BEA7DB00EB1EB2 /* LinkedList01.cpp in Sources */,
+				3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */,
 				3AF5FDDF2188B6B7009EDC30 /* 806.cpp in Sources */,
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
 				3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */,
