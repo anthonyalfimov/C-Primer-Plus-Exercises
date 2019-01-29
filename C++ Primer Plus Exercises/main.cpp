@@ -9,5 +9,5 @@
 int main()
 {
 //  Call one of the functions to run an exercise:
-    showLinkedList101();
+    show1101();
 }
