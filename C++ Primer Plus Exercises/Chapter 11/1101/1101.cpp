@@ -8,7 +8,8 @@
 
 #include <iostream>
 #include <fstream>
-#include <cstdlib>              // Standard ANSI C lib for: rand(), srand()
+#include <string>
+#include <cstdlib>              // Standard ANSI C lib for: rand(), srand(), exit()
                                 //     rand() returns a pseudorandom integer
                                 //     (by applying a deterministic algorithm to a seed value)
                                 //     from 0 to some implementation-determined value
@@ -21,6 +22,14 @@
                                 //     the need for the unnecessary in our case variable
 #include "Vector1101.hpp"
 
+namespace
+{
+    const std::string filePrefix {"RandomWalk_"};
+    const std::string fileExtension {".txt"};
+    
+    std::string fileName(int);
+}
+
 void show1101()
 {
     using e1101::Vector;
@@ -31,7 +40,8 @@ void show1101()
     
     // Output file
     std::ofstream outFile;
-    const char* fileName = "randomWalk.txt";
+    
+    int runCount = 0;                   // number of times the random walk was performed
     
     double direction;
     Vector step;
@@ -47,7 +57,15 @@ void show1101()
         if (!(std::cin >> dstep))
             break;
         
-        outFile.open(fileName);
+        runCount++;
+        outFile.open(fileName(runCount));
+        if (!outFile.is_open())         // failed to create the file
+        {
+            std::cout << "Could not create the file " << fileName(runCount) << "\n"
+                      << "Program terminating.\n";
+            std::exit(EXIT_FAILURE);    // <cstdlib> function that communicated failure to the OS
+        }
+        
         outFile << "Target distance: " << target            // Report initial conditions
                 << ", Step size: " << dstep << "\n";
         outFile << stepCount << ":\t" << result << "\n";    // Report initial position
@@ -81,7 +99,7 @@ void show1101()
             << "Average outward displacement per step is "
             << result.getR() / stepCount << "\n";
         
-        std::cout << "Results saved to \"" << fileName << "\"\n";
+        std::cout << "Results saved to \"" << fileName(runCount) << "\"\n";
         
         // Reset the values for another calculation
         stepCount = 0;
@@ -95,4 +113,12 @@ void show1101()
     std::cin.clear();
     while (std::cin.get() != '\n')
         continue;
+}
+
+namespace
+{
+    std::string fileName(int n)
+    {
+        return filePrefix + std::to_string(n) + fileExtension;
+    }
 }
