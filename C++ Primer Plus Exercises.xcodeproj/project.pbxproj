@@ -35,6 +35,8 @@
 		3A66E6B9220468A000C701AF /* 1105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6B8220468A000C701AF /* 1105.cpp */; };
 		3A66E6BD22047BFD00C701AF /* Stonewt1106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6BB22047BFD00C701AF /* Stonewt1106.cpp */; };
 		3A66E6BF22047C0B00C701AF /* 1106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6BE22047C0B00C701AF /* 1106.cpp */; };
+		3A66E6C32204A09D00C701AF /* Complex1107.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6C12204A09D00C701AF /* Complex1107.cpp */; };
+		3A66E6C52204A0A700C701AF /* 1107.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6C42204A0A700C701AF /* 1107.cpp */; };
 		3A78C6C4216F840A00549680 /* 707.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A78C6C2216F840A00549680 /* 707.cpp */; };
 		3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8521B69579005FA9F3 /* golf1003.cpp */; };
 		3A7C1A8921B69CB6005FA9F3 /* 1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8821B69CB6005FA9F3 /* 1003.cpp */; };
@@ -126,6 +128,9 @@
 		3A66E6BB22047BFD00C701AF /* Stonewt1106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stonewt1106.cpp; sourceTree = "<group>"; };
 		3A66E6BC22047BFD00C701AF /* Stonewt1106.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stonewt1106.hpp; sourceTree = "<group>"; };
 		3A66E6BE22047C0B00C701AF /* 1106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1106.cpp; sourceTree = "<group>"; };
+		3A66E6C12204A09D00C701AF /* Complex1107.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Complex1107.cpp; sourceTree = "<group>"; };
+		3A66E6C22204A09D00C701AF /* Complex1107.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Complex1107.hpp; sourceTree = "<group>"; };
+		3A66E6C42204A0A700C701AF /* 1107.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1107.cpp; sourceTree = "<group>"; };
 		3A78C6C2216F840A00549680 /* 707.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 707.cpp; sourceTree = "<group>"; };
 		3A7C1A8521B69579005FA9F3 /* golf1003.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = golf1003.cpp; sourceTree = "<group>"; };
 		3A7C1A8621B69579005FA9F3 /* golf1003.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = golf1003.hpp; sourceTree = "<group>"; };
@@ -295,6 +300,7 @@
 				3A39D03D220351720036828D /* 1104 */,
 				3A66E6B42204686C00C701AF /* 1105 */,
 				3A66E6BA22047BE700C701AF /* 1106 */,
+				3A66E6C0220498B800C701AF /* 1107 */,
 			);
 			path = "Chapter 11";
 			sourceTree = "<group>";
@@ -357,6 +363,16 @@
 				3A66E6BE22047C0B00C701AF /* 1106.cpp */,
 			);
 			path = 1106;
+			sourceTree = "<group>";
+		};
+		3A66E6C0220498B800C701AF /* 1107 */ = {
+			isa = PBXGroup;
+			children = (
+				3A66E6C12204A09D00C701AF /* Complex1107.cpp */,
+				3A66E6C22204A09D00C701AF /* Complex1107.hpp */,
+				3A66E6C42204A0A700C701AF /* 1107.cpp */,
+			);
+			path = 1107;
 			sourceTree = "<group>";
 		};
 		3A68487C215126EB004C5F68 /* Experiments */ = {
@@ -553,6 +569,7 @@
 			files = (
 				3AF5FDDC2188B3AC009EDC30 /* 805.cpp in Sources */,
 				3AF25BD5216E41150044A953 /* 704.cpp in Sources */,
+				3A66E6C52204A0A700C701AF /* 1107.cpp in Sources */,
 				3AD6B01621A30EE800A344EA /* Sales904.cpp in Sources */,
 				3A24FC1E21BEA7DB00EB1EB2 /* LinkedList01.cpp in Sources */,
 				3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */,
@@ -561,6 +578,7 @@
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
 				3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */,
 				3A4333AB22009BAF00F5A756 /* Vector1101.cpp in Sources */,
+				3A66E6C32204A09D00C701AF /* Complex1107.cpp in Sources */,
 				3A2FC6B321B59B5400EEE2FE /* 1002.cpp in Sources */,
 				3AF5FDD321889D30009EDC30 /* 802.cpp in Sources */,
 				3A49E85121B7E211004CC9C7 /* Plorg.cpp in Sources */,
