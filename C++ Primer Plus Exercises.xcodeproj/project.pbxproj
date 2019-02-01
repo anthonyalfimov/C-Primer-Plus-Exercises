@@ -33,6 +33,8 @@
 		3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */; };
 		3A66E6B72204689600C701AF /* Stonewt1105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6B52204689600C701AF /* Stonewt1105.cpp */; };
 		3A66E6B9220468A000C701AF /* 1105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6B8220468A000C701AF /* 1105.cpp */; };
+		3A66E6BD22047BFD00C701AF /* Stonewt1106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6BB22047BFD00C701AF /* Stonewt1106.cpp */; };
+		3A66E6BF22047C0B00C701AF /* 1106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6BE22047C0B00C701AF /* 1106.cpp */; };
 		3A78C6C4216F840A00549680 /* 707.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A78C6C2216F840A00549680 /* 707.cpp */; };
 		3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8521B69579005FA9F3 /* golf1003.cpp */; };
 		3A7C1A8921B69CB6005FA9F3 /* 1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8821B69CB6005FA9F3 /* 1003.cpp */; };
@@ -121,6 +123,9 @@
 		3A66E6B52204689600C701AF /* Stonewt1105.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stonewt1105.cpp; sourceTree = "<group>"; };
 		3A66E6B62204689600C701AF /* Stonewt1105.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stonewt1105.hpp; sourceTree = "<group>"; };
 		3A66E6B8220468A000C701AF /* 1105.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1105.cpp; sourceTree = "<group>"; };
+		3A66E6BB22047BFD00C701AF /* Stonewt1106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stonewt1106.cpp; sourceTree = "<group>"; };
+		3A66E6BC22047BFD00C701AF /* Stonewt1106.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stonewt1106.hpp; sourceTree = "<group>"; };
+		3A66E6BE22047C0B00C701AF /* 1106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1106.cpp; sourceTree = "<group>"; };
 		3A78C6C2216F840A00549680 /* 707.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 707.cpp; sourceTree = "<group>"; };
 		3A7C1A8521B69579005FA9F3 /* golf1003.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = golf1003.cpp; sourceTree = "<group>"; };
 		3A7C1A8621B69579005FA9F3 /* golf1003.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = golf1003.hpp; sourceTree = "<group>"; };
@@ -289,6 +294,7 @@
 				3A39D037220344CC0036828D /* 1103 */,
 				3A39D03D220351720036828D /* 1104 */,
 				3A66E6B42204686C00C701AF /* 1105 */,
+				3A66E6BA22047BE700C701AF /* 1106 */,
 			);
 			path = "Chapter 11";
 			sourceTree = "<group>";
@@ -341,6 +347,16 @@
 				3A66E6B8220468A000C701AF /* 1105.cpp */,
 			);
 			path = 1105;
+			sourceTree = "<group>";
+		};
+		3A66E6BA22047BE700C701AF /* 1106 */ = {
+			isa = PBXGroup;
+			children = (
+				3A66E6BB22047BFD00C701AF /* Stonewt1106.cpp */,
+				3A66E6BC22047BFD00C701AF /* Stonewt1106.hpp */,
+				3A66E6BE22047C0B00C701AF /* 1106.cpp */,
+			);
+			path = 1106;
 			sourceTree = "<group>";
 		};
 		3A68487C215126EB004C5F68 /* Experiments */ = {
@@ -566,6 +582,7 @@
 				3AC393C4216F95B100723A1B /* 709.cpp in Sources */,
 				3A39D03622033C7F0036828D /* 1102.cpp in Sources */,
 				3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */,
+				3A66E6BF22047C0B00C701AF /* 1106.cpp in Sources */,
 				3A39D040220352180036828D /* Time1104.cpp in Sources */,
 				3AD6B00E21A2F8F500A344EA /* 902.cpp in Sources */,
 				3A39D03A220345360036828D /* Vector1103.cpp in Sources */,
@@ -573,6 +590,7 @@
 				3A047DEB219EDE6500245EE1 /* golf901.cpp in Sources */,
 				3AC393C7216FAB5200723A1B /* 710.cpp in Sources */,
 				3A78C6C4216F840A00549680 /* 707.cpp in Sources */,
+				3A66E6BD22047BFD00C701AF /* Stonewt1106.cpp in Sources */,
 				3A39D042220352210036828D /* 1104.cpp in Sources */,
 				3AF5FDD62188A237009EDC30 /* 803.cpp in Sources */,
 				3AF25BCC216E23E10044A953 /* 701.cpp in Sources */,
