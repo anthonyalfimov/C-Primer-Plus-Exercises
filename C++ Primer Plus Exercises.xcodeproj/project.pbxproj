@@ -31,6 +31,8 @@
 		3A49E85F21B82FE2004CC9C7 /* 1008b.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85E21B82FE2004CC9C7 /* 1008b.cpp */; };
 		3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */; };
 		3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */; };
+		3A66E6B72204689600C701AF /* Stonewt1105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6B52204689600C701AF /* Stonewt1105.cpp */; };
+		3A66E6B9220468A000C701AF /* 1105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6B8220468A000C701AF /* 1105.cpp */; };
 		3A78C6C4216F840A00549680 /* 707.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A78C6C2216F840A00549680 /* 707.cpp */; };
 		3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8521B69579005FA9F3 /* golf1003.cpp */; };
 		3A7C1A8921B69CB6005FA9F3 /* 1003.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A8821B69CB6005FA9F3 /* 1003.cpp */; };
@@ -116,6 +118,9 @@
 		3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReadToVector01.cpp; sourceTree = "<group>"; };
 		3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CaesarCipher01.cpp; sourceTree = "<group>"; };
 		3A65668B21592D9300ACDA13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A66E6B52204689600C701AF /* Stonewt1105.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stonewt1105.cpp; sourceTree = "<group>"; };
+		3A66E6B62204689600C701AF /* Stonewt1105.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stonewt1105.hpp; sourceTree = "<group>"; };
+		3A66E6B8220468A000C701AF /* 1105.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1105.cpp; sourceTree = "<group>"; };
 		3A78C6C2216F840A00549680 /* 707.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 707.cpp; sourceTree = "<group>"; };
 		3A7C1A8521B69579005FA9F3 /* golf1003.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = golf1003.cpp; sourceTree = "<group>"; };
 		3A7C1A8621B69579005FA9F3 /* golf1003.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = golf1003.hpp; sourceTree = "<group>"; };
@@ -283,6 +288,7 @@
 				3A39D03122033C430036828D /* 1102 */,
 				3A39D037220344CC0036828D /* 1103 */,
 				3A39D03D220351720036828D /* 1104 */,
+				3A66E6B42204686C00C701AF /* 1105 */,
 			);
 			path = "Chapter 11";
 			sourceTree = "<group>";
@@ -325,6 +331,16 @@
 				3A49E85E21B82FE2004CC9C7 /* 1008b.cpp */,
 			);
 			path = 1008b;
+			sourceTree = "<group>";
+		};
+		3A66E6B42204686C00C701AF /* 1105 */ = {
+			isa = PBXGroup;
+			children = (
+				3A66E6B52204689600C701AF /* Stonewt1105.cpp */,
+				3A66E6B62204689600C701AF /* Stonewt1105.hpp */,
+				3A66E6B8220468A000C701AF /* 1105.cpp */,
+			);
+			path = 1105;
 			sourceTree = "<group>";
 		};
 		3A68487C215126EB004C5F68 /* Experiments */ = {
@@ -543,6 +559,7 @@
 				3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */,
 				3AD6B01821A30EF500A344EA /* 904.cpp in Sources */,
 				3A49E85D21B818AD004CC9C7 /* SimpleListB.cpp in Sources */,
+				3A66E6B9220468A000C701AF /* 1105.cpp in Sources */,
 				3AD3ED9620EBD8F3008D28BF /* main.cpp in Sources */,
 				3A49E85921B809EE004CC9C7 /* 1008a.cpp in Sources */,
 				3AF5FDD92188AA9A009EDC30 /* 804.cpp in Sources */,
@@ -576,6 +593,7 @@
 				3AC393C1216F8DE800723A1B /* 708b.cpp in Sources */,
 				3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */,
 				3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */,
+				3A66E6B72204689600C701AF /* Stonewt1105.cpp in Sources */,
 				3A7C1A9621B6CEF6005FA9F3 /* 1005.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
