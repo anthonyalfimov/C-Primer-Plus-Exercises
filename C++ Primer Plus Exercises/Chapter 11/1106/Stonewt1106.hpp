@@ -9,8 +9,6 @@
 #ifndef Stonewt1106_hpp
 #define Stonewt1106_hpp
 
-#include <iostream>
-
 namespace e1106
 {
     class Stonewt
@@ -23,7 +21,7 @@ namespace e1106
         double m_pounds;                        // entire weight in pounds
         
     public:
-        Stonewt(double pounds);        // constructor for fractional pounds
+        Stonewt(double pounds);                 // constructor for fractional pounds
         Stonewt(int stone, double pounds);      // constructor for stone and pounds
         Stonewt();                              // default constructor
         ~Stonewt();                             // destructor
