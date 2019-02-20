@@ -20,12 +20,6 @@ namespace LinkedList01
     //  Using typedef as class templates haven't been covered yet
     typedef int Item;
     
-    struct Node
-    {
-        Item data;
-        Node* ref;
-    };
-    
     class List
     {
     public:
@@ -75,6 +69,12 @@ namespace LinkedList01
         bool insertAfter(std::size_t index, const Item& item);
         
     private:
+        struct Node
+        {
+            Item data;
+            Node* ref;
+        };
+        
         // Basic linked list with only head pointer stored
         Node* m_head;
         
