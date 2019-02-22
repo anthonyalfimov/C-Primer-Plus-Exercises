@@ -88,7 +88,7 @@ namespace LinkedList01
     };
     
     // Keep inline implementations out of the interface for clarity
-    inline List::List() { m_head = nullptr; }
+    inline List::List() : m_head(nullptr) {}
     inline bool List::isEmpty() const { return m_head == nullptr; }
 }
 

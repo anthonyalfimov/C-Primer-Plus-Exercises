@@ -16,15 +16,14 @@ namespace LinkedList01
     {
         std::cout << "Delete list items: ";
         
-        Node* current {m_head};
-        Node* next;
+        Node* current;
         
-        while (current != nullptr)
+        while (m_head != nullptr)
         {
-            next = current->ref;
+            current = m_head;
+            m_head = m_head->ref;
             std::cout << current->data << " ";
             delete current;
-            current = next;
         }
         std::cout << std::endl;
     }
@@ -75,7 +74,7 @@ namespace LinkedList01
         return true;
     }
     
-    Node* List::nodeAt(std::size_t index)   // size_t is unsigned, so passing a negative index
+    List::Node* List::nodeAt(std::size_t index)   // size_t is unsigned, so passing a negative index
     {                                       //    results in it being a very large number
         Node* n {m_head};
         while (n != nullptr)
