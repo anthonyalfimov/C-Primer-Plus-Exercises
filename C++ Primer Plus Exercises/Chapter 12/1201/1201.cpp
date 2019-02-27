@@ -21,6 +21,7 @@ void show1201()
     daisy.show();
     
     Cow cattle[COW_COUNT] {daisy};                  // initialise first cow to daisy using copy ctor
+    
     char input[2][SIZE];                            // temporary string for user input
     double weight;                                  // temporary variable for weight input
     const char* message[2]                          // input prompts
