@@ -79,6 +79,7 @@ void show1107();
 void show1201();
 void show1202();
 void show1203();
+void show1204();
 
 //   =============================
 //   |      Data Structures      |
