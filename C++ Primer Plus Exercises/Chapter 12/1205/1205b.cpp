@@ -11,6 +11,7 @@
 #include <iostream>
 #include <cstdlib>              // for rand() and srand()
 #include <ctime>                // for time()
+#include <cmath>                // for abs()
 #include "Queue1200.hpp"
 
 namespace
@@ -82,9 +83,9 @@ void show1205b()
     double targetTime;
     std::cin >> targetTime;
     
-    std::cout << "Enter the desired delta threshold: ";
-    double deltaThreshold;
-    std::cin >> deltaThreshold;
+    std::cout << "Enter the desired precision: ";
+    double precision;
+    std::cin >> precision;
     
     // Variables for performing trials
     double delta = InitDelta;                   // arrival rate displacement
@@ -147,7 +148,7 @@ void show1205b()
         if (trials > MaxTrials)
             break;
         
-    } while (delta > deltaThreshold || resultStats.lineWait > targetTime);
+    } while (std::abs(resultStats.lineWait - targetTime) > precision);
     
     // Reporing the results
     if (trials <= MaxTrials)
