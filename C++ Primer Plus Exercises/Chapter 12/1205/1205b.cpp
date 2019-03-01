@@ -1,11 +1,11 @@
 //
-//  1205a.cpp
+//  1205b.cpp
 //  C++ Primer Plus Exercises
 //
 //  Created by Anthony on 01/03/2019.
 //  Copyright © 2019 Anthony. All rights reserved.
 //
-//  Solve the problem for customers per hour by stepping through possible integer values
+//  Solve the problem for customers per hour by using iterative subdivision
 //
 
 #include <iostream>
@@ -15,11 +15,10 @@
 
 namespace
 {
-    const int        MinutesPerHour = 60;
-    const int        MinSimHours = 100;             // minimum amount of simulation hours required
-    constexpr double MaxArrivalRate = 60.0;         // threshold due to running 1 cycle per minute
-    constexpr double ArrivalRateIncrement = 1.0;    // step size for number of customers per hour
-    constexpr int    MaxTrials = MaxArrivalRate / ArrivalRateIncrement;
+    const int    MinutesPerHour = 60;
+    const int    MinSimHours = 100;     // minimum amount of simulation hours required
+    const int    MaxTrials = 50;        // stop simmulation after this number exceeded
+    const double InitDelta = 30.0;
     
     struct Stats                    // statistics of a single simulation run
     {
@@ -50,7 +49,7 @@ namespace
     bool isNewCustomer(double rate);     // is there a new customer?
 }
 
-void show1205a()
+void show1205b()
 {
     using e1200::Queue;
     using e1200::Item;
@@ -58,8 +57,8 @@ void show1205a()
     std::srand(static_cast<int>(std::time(nullptr)));       // seed the random number generator
     
     std::cout << "===| ATM Simulation |===\n"
-              << "> Determine number of clients per hour that leads "
-              << "to the target avarage wait time\n\n";
+    << "> Determine number of clients per hour that leads "
+    << "to the target avarage wait time\n\n";
     
     std::cout << "Enter the maximum size of the queue: ";
     int queueSize;
@@ -69,11 +68,11 @@ void show1205a()
     std::cout << "Enter the number of simulated hours: ";
     int hours;
     std::cin >> hours;
-    
+ 
     if (hours < MinSimHours)
     {
         std::cout << "WARNING: Insufficient simulation time requested. Using default value of "
-                  << MinSimHours << " hours instead.\n";
+        << MinSimHours << " hours instead.\n";
         hours = MinSimHours;
     }
     
@@ -83,18 +82,30 @@ void show1205a()
     double targetTime;
     std::cin >> targetTime;
     
+    std::cout << "Enter the desired delta threshold: ";
+    double deltaThreshold;
+    std::cin >> deltaThreshold;
+    
     // Variables for performing trials
-    double arrivalRate = ArrivalRateIncrement;  // number of customers arriving per hour
-    int    trials;                              // counter for number of trials
+    double delta = InitDelta;                   // arrival rate displacement
+    double arrivalRate = delta;                 // number of customers arriving per hour
+    int    trials = 0;                          // counter for number of trials
     int    waitTime;                            // temp storage for time until ATM is free
     Item   tmp;                                 // temp storage for enqueuing and dequeueing items
-    Stats  trialStats;                          // temp storage for statistics of current trial
-    Stats  resultStats;                         // output for statistics of last succesful trial
+    Stats  resultStats;                         // output for statistics of the trial
     
-    for (trials = 0; trials < MaxTrials; trials++)
+    do
     {
         // Running the simulation
-        trialStats.reset();
+        if (trials > 0)                                 // update arrival rate
+        {
+            if (resultStats.lineWait < targetTime)      // if wait time is too long, decrease
+                arrivalRate += delta;                   // - number of customers per hour
+            else                                        // - otherwise increase it
+                arrivalRate -= delta;
+        }
+        
+        resultStats.reset();
         waitTime = 0;
         for (int cycle = 0; cycle < cycleCount; cycle++)
         {
@@ -102,10 +113,10 @@ void show1205a()
             if (isNewCustomer(arrivalRate))
             {
                 if (line.isFull())
-                    trialStats.turnaways++;
+                    resultStats.turnaways++;
                 else
                 {
-                    trialStats.customers++;
+                    resultStats.customers++;
                     tmp.set(cycle);                         // cycle = time of arrival
                     line.enqueue(tmp);                      // add new customer to the line
                 }
@@ -115,45 +126,40 @@ void show1205a()
             {
                 line.dequeue(tmp);                          // attend next customer from the queue
                 waitTime = tmp.getProcessTime();            // get processing time for the customer
-                trialStats.served++;                        // count customer as served
-                trialStats.lineWait += cycle - tmp.getArrivalTime();
+                resultStats.served++;                       // count customer as served
+                resultStats.lineWait += cycle - tmp.getArrivalTime();
                                                             // accumulate time in line
             }
             // Handle waiting for processing
             if (waitTime > 0)
                 waitTime--;
             // Update average line length calculation
-            trialStats.lineCount += line.count();
+            resultStats.lineCount += line.count();
         }
-        
-        trialStats.lineWait /= trialStats.served;           // calculate average wait time
-        
-        if (trialStats.lineWait > targetTime)               // break if target exceeded
-            break;
         
         while (! line.isEmpty())                            // empty leftover items from the queue
             line.dequeue(tmp);
-        
-        arrivalRate += ArrivalRateIncrement;                // increase customer per hour rate
-        resultStats = trialStats;                           // save stats from current trial
-    }
 
+        resultStats.lineWait /= resultStats.served;         // calculate average wait time
+        delta /= 2.0;           // set next arrival rate displacement to half of the previous one
+        trials++;
+        
+        if (trials > MaxTrials)
+            break;
+        
+    } while (delta > deltaThreshold || resultStats.lineWait > targetTime);
+    
     // Reporing the results
-    if (trials > 0)
+    if (trials <= MaxTrials)
     {
         resultStats.lineCount /= cycleCount;                 // calculate average line length
-        arrivalRate -= ArrivalRateIncrement;    // undo step that took wait time over threshold
         
         // Output format for floating point values
         std::cout.precision(2);
         std::cout.setf(std::ios_base::fixed, std::ios_base::floatfield);
         std::cout << "\nWith " << arrivalRate << " customers per hour the average wait time of "
-                  << resultStats.lineWait << " minutes was achieved [after "
-                  << trials << " trials]\n";
-        
-        if (trials == MaxTrials)
-            std::cout << "NOTE: maximum number of customers per hour allowed by the simulation "
-                         "was reached.\n";
+        << resultStats.lineWait << " minutes was achieved [after "
+        << trials << " trials]\n";
         
         std::cout
         << "\n"
@@ -163,7 +169,7 @@ void show1205a()
         << "Average queue size: " << resultStats.lineCount << "\n";
     }
     else
-        std::cout << "\nSimulation failed to reach designated average wait time!\n";
+        std::cout << "\nSimulation exceeded maximum number of trials!\n";
     
     std::cout << "\nDone.\n";
 }
@@ -176,3 +182,4 @@ namespace
         return (std::rand() * averageTime / RAND_MAX < 1.0);      // true one time in averageTime
     }
 }
+

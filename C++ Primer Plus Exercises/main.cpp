@@ -9,5 +9,5 @@
 int main()
 {
 //  Call one of the functions to run an exercise:
-    show1205a();
+    show1205b();
 }
