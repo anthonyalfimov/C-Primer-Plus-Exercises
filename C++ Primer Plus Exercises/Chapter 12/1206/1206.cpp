@@ -1,11 +1,9 @@
 //
-//  1205b.cpp
+//  1206.cpp
 //  C++ Primer Plus Exercises
 //
-//  Created by Anthony on 01/03/2019.
+//  Created by Anthony on 04/03/2019.
 //  Copyright © 2019 Anthony. All rights reserved.
-//
-//  Solve the problem for customers per hour by using iterative subdivision
 //
 
 #include <iostream>
@@ -47,10 +45,10 @@ namespace
      @param rate cutomer per hour rate
      @return true if customer shows up this cycle, false otherwise
      */
-    bool isNewCustomer(double rate);    // is there a new customer?
+    bool isNewCustomer(double rate);        // is there a new customer?
 }
 
-void show1205b()
+void show1206()
 {
     using e1200::Queue;
     using e1200::Item;
@@ -59,17 +57,23 @@ void show1205b()
     
     std::cout << "===| ATM Simulation |===\n"
     << "> Determine number of clients per hour that leads "
-    << "to the target avarage wait time\n\n";
+    << "to the target avarage wait time when using two ATMs\n\n";
     
-    std::cout << "Enter the maximum size of the queue: ";
+    std::cout << "Enter the maximum size of the queues: ";
     int queueSize;
     std::cin >> queueSize;
-    Queue line(queueSize);                  // create a Queue object with max of queueSize items
+    Queue lines[2]                          // create two Queue objects with max of queueSize items
+    {
+        {queueSize},
+        {queueSize}
+    };
+    
+    Queue line2(queueSize);
     
     std::cout << "Enter the number of simulated hours: ";
     int hours;
     std::cin >> hours;
- 
+    
     if (hours < MinSimHours)
     {
         std::cout << "WARNING: Insufficient simulation time requested. Using default value of "
@@ -91,7 +95,7 @@ void show1205b()
     double delta = InitDelta;                   // arrival rate displacement
     double arrivalRate = delta;                 // number of customers arriving per hour
     int    trials = 0;                          // counter for number of trials
-    int    waitTime;                            // temp storage for time until ATM is free
+    int    waitTime[2];                         // temp storage for times until ATM (0, 1) are free
     Item   tmp;                                 // temp storage for enqueuing and dequeueing items
     Stats  resultStats;                         // output for statistics of the trial
     
@@ -106,41 +110,53 @@ void show1205b()
                 arrivalRate -= delta;
         }
         
-        resultStats.reset();
-        waitTime = 0;
+        resultStats.reset();                            // reset trial statistics
+        waitTime[0] = waitTime[1] = 0;                  // reset wait times
+        
         for (int cycle = 0; cycle < cycleCount; cycle++)
         {
             // Handle new customers
             if (isNewCustomer(arrivalRate))
             {
-                if (line.isFull())
+                if (lines[0].isFull() && lines[1].isFull())
                     resultStats.turnaways++;
                 else
                 {
                     resultStats.customers++;
-                    tmp.set(cycle);                         // cycle = time of arrival
-                    line.enqueue(tmp);                      // add new customer to the line
+                    tmp.set(cycle);                     // cycle = time of arrival
+                    
+                    if (lines[0].count() < lines[1].count())
+                        lines[0].enqueue(tmp);          // add new customer to the line 0
+                    else
+                        lines[1].enqueue(tmp);          // add new customer to the line 1
                 }
             }
-            // Handle processing the clients
-            if (waitTime <= 0 && ! line.isEmpty())
+            
+            // Handle processing clients in two lines
+            for (int ln = 0; ln < 2; ln++)
             {
-                line.dequeue(tmp);                          // attend next customer from the queue
-                waitTime = tmp.getProcessTime();            // get processing time for the customer
-                resultStats.served++;                       // count customer as served
-                resultStats.lineWait += cycle - tmp.getArrivalTime();
+                if (waitTime[ln] <= 0 && ! lines[ln].isEmpty())
+                {
+                    lines[ln].dequeue(tmp);                 // attend next customer from the queue
+                    waitTime[ln] = tmp.getProcessTime();    // get processing time for the customer
+                    resultStats.served++;                   // count customer as served
+                    resultStats.lineWait += cycle - tmp.getArrivalTime();
                                                             // accumulate time in line
+                }
+                
+                // Handle waiting for processing
+                if (waitTime[ln] > 0)
+                    waitTime[ln]--;
+                
+                // Update average line length calculation
+                resultStats.lineCount += lines[ln].count();
             }
-            // Handle waiting for processing
-            if (waitTime > 0)
-                waitTime--;
-            // Update average line length calculation
-            resultStats.lineCount += line.count();
         }
         
-        while (! line.isEmpty())                            // empty leftover items from the queue
-            line.dequeue(tmp);
-
+        for (int ln = 0; ln < 2; ln++)
+            while (! lines[ln].isEmpty())                   // empty leftover items from the queues
+                lines[ln].dequeue(tmp);
+        
         resultStats.lineWait /= resultStats.served;         // calculate average wait time
         delta /= 2.0;           // set next arrival rate displacement to half of the previous one
         trials++;
@@ -153,7 +169,8 @@ void show1205b()
     // Reporing the results
     if (trials <= MaxTrials)
     {
-        resultStats.lineCount /= cycleCount;                 // calculate average line length
+        resultStats.lineCount = resultStats.lineCount / cycleCount / 2;
+                                                            // calculate average line length
         
         // Output format for floating point values
         std::cout.precision(2);
@@ -183,4 +200,3 @@ namespace
         return (std::rand() * averageTime / RAND_MAX < 1.0);      // true one time in averageTime
     }
 }
-

@@ -52,6 +52,7 @@
 		3A9C17AF216F8B8100F99D49 /* 708a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C17AD216F8B8100F99D49 /* 708a.cpp */; };
 		3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415B215BB0CB00BBB074 /* 604.cpp */; };
 		3AAA4160215BE02B00BBB074 /* 607.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415E215BE02B00BBB074 /* 607.cpp */; };
+		3ABF8473222D470C00A5C506 /* 1206.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF8472222D470C00A5C506 /* 1206.cpp */; };
 		3AC393C1216F8DE800723A1B /* 708b.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC393BF216F8DE800723A1B /* 708b.cpp */; };
 		3AC393C4216F95B100723A1B /* 709.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC393C2216F95B100723A1B /* 709.cpp */; };
 		3AC393C7216FAB5200723A1B /* 710.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC393C5216FAB5200723A1B /* 710.cpp */; };
@@ -165,6 +166,7 @@
 		3A9C17AD216F8B8100F99D49 /* 708a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 708a.cpp; sourceTree = "<group>"; };
 		3AAA415B215BB0CB00BBB074 /* 604.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 604.cpp; sourceTree = "<group>"; };
 		3AAA415E215BE02B00BBB074 /* 607.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 607.cpp; sourceTree = "<group>"; };
+		3ABF8472222D470C00A5C506 /* 1206.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1206.cpp; sourceTree = "<group>"; };
 		3AC393BF216F8DE800723A1B /* 708b.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 708b.cpp; sourceTree = "<group>"; };
 		3AC393C2216F95B100723A1B /* 709.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 709.cpp; sourceTree = "<group>"; };
 		3AC393C5216FAB5200723A1B /* 710.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 710.cpp; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				3ADA52E82226EED500F12BE9 /* 1204 */,
 				3ADA7BE2222958BE00F8064F /* Queue1200 */,
 				3ADA7BDE222956D200F8064F /* 1205 */,
+				3ABF8471222D46EA00A5C506 /* 1206 */,
 			);
 			path = "Chapter 12";
 			sourceTree = "<group>";
@@ -476,6 +479,14 @@
 				3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */,
 			);
 			path = 1006;
+			sourceTree = "<group>";
+		};
+		3ABF8471222D46EA00A5C506 /* 1206 */ = {
+			isa = PBXGroup;
+			children = (
+				3ABF8472222D470C00A5C506 /* 1206.cpp */,
+			);
+			path = 1206;
 			sourceTree = "<group>";
 		};
 		3AD3ED8920EBD8F3008D28BF = {
@@ -747,6 +758,7 @@
 				3A6598182226BAF90059FFC0 /* 1201.cpp in Sources */,
 				3A66E6B72204689600C701AF /* Stonewt1105.cpp in Sources */,
 				3A7C1A9621B6CEF6005FA9F3 /* 1005.cpp in Sources */,
+				3ABF8473222D470C00A5C506 /* 1206.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

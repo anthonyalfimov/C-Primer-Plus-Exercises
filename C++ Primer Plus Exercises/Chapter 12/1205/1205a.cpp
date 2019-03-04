@@ -47,7 +47,7 @@ namespace
      @param rate cutomer per hour rate
      @return true if customer shows up this cycle, false otherwise
      */
-    bool isNewCustomer(double rate);     // is there a new customer?
+    bool isNewCustomer(double rate);    // is there a new customer?
 }
 
 void show1205a()
@@ -156,11 +156,11 @@ void show1205a()
                          "was reached.\n";
         
         std::cout
-        << "\n"
-        << "Customers accepted: " << resultStats.customers << "\n"
-        << "  Customers served: " << resultStats.served << "\n"
-        << "         Turnaways: " << resultStats.turnaways << "\n"
-        << "Average queue size: " << resultStats.lineCount << "\n";
+            << "\n"
+            << "Customers accepted: " << resultStats.customers << "\n"
+            << "  Customers served: " << resultStats.served << "\n"
+            << "         Turnaways: " << resultStats.turnaways << "\n"
+            << "Average queue size: " << resultStats.lineCount << "\n";
     }
     else
         std::cout << "\nSimulation failed to reach designated average wait time!\n";

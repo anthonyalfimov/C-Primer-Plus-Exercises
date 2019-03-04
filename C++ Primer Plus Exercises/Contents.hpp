@@ -82,6 +82,7 @@ void show1203();
 void show1204();
 void show1205a();
 void show1205b();
+void show1206();
 
 //   =============================
 //   |      Data Structures      |
