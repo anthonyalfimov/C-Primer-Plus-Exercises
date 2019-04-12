@@ -21,6 +21,9 @@
 		3A39D03C220345400036828D /* 1103.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D03B220345400036828D /* 1103.cpp */; };
 		3A39D040220352180036828D /* Time1104.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D03E220352180036828D /* Time1104.cpp */; };
 		3A39D042220352210036828D /* 1104.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D041220352210036828D /* 1104.cpp */; };
+		3A3DC37C2260E5BB00A05771 /* cd1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC37A2260E5BB00A05771 /* cd1302.cpp */; };
+		3A3DC37F2260E5CC00A05771 /* classic1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC37D2260E5CC00A05771 /* classic1302.cpp */; };
+		3A3DC3812260E5D600A05771 /* 1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC3802260E5D600A05771 /* 1302.cpp */; };
 		3A4333AB22009BAF00F5A756 /* Vector1101.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4333A922009BAF00F5A756 /* Vector1101.cpp */; };
 		3A4333AD22009BBE00F5A756 /* 1101.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4333AC22009BBE00F5A756 /* 1101.cpp */; };
 		3A49E85121B7E211004CC9C7 /* Plorg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E84F21B7E211004CC9C7 /* Plorg.cpp */; };
@@ -123,6 +126,11 @@
 		3A39D03E220352180036828D /* Time1104.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time1104.cpp; sourceTree = "<group>"; };
 		3A39D03F220352180036828D /* Time1104.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time1104.hpp; sourceTree = "<group>"; };
 		3A39D041220352210036828D /* 1104.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1104.cpp; sourceTree = "<group>"; };
+		3A3DC37A2260E5BB00A05771 /* cd1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cd1302.cpp; sourceTree = "<group>"; };
+		3A3DC37B2260E5BB00A05771 /* cd1302.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cd1302.hpp; sourceTree = "<group>"; };
+		3A3DC37D2260E5CC00A05771 /* classic1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classic1302.cpp; sourceTree = "<group>"; };
+		3A3DC37E2260E5CC00A05771 /* classic1302.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classic1302.hpp; sourceTree = "<group>"; };
+		3A3DC3802260E5D600A05771 /* 1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1302.cpp; sourceTree = "<group>"; };
 		3A4333A922009BAF00F5A756 /* Vector1101.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector1101.cpp; sourceTree = "<group>"; };
 		3A4333AA22009BAF00F5A756 /* Vector1101.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector1101.hpp; sourceTree = "<group>"; };
 		3A4333AC22009BBE00F5A756 /* 1101.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1101.cpp; sourceTree = "<group>"; };
@@ -331,6 +339,18 @@
 			path = 1104;
 			sourceTree = "<group>";
 		};
+		3A3DC3792260E56000A05771 /* 1302 */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DC37A2260E5BB00A05771 /* cd1302.cpp */,
+				3A3DC37B2260E5BB00A05771 /* cd1302.hpp */,
+				3A3DC37D2260E5CC00A05771 /* classic1302.cpp */,
+				3A3DC37E2260E5CC00A05771 /* classic1302.hpp */,
+				3A3DC3802260E5D600A05771 /* 1302.cpp */,
+			);
+			path = 1302;
+			sourceTree = "<group>";
+		};
 		3A4333A722009B8400F5A756 /* Chapter 11 */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				3A61325E2260C8D800569D33 /* 1301 */,
+				3A3DC3792260E56000A05771 /* 1302 */,
 			);
 			path = "Chapter 13";
 			sourceTree = "<group>";
@@ -722,6 +743,7 @@
 				3A39D03C220345400036828D /* 1103.cpp in Sources */,
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
 				3ADA7BE1222957A700F8064F /* Customer1200.cpp in Sources */,
+				3A3DC37C2260E5BB00A05771 /* cd1302.cpp in Sources */,
 				3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */,
 				3A4333AB22009BAF00F5A756 /* Vector1101.cpp in Sources */,
 				3A66E6C32204A09D00C701AF /* Complex1107.cpp in Sources */,
@@ -749,6 +771,7 @@
 				3AD3ED9620EBD8F3008D28BF /* main.cpp in Sources */,
 				3A49E85921B809EE004CC9C7 /* 1008a.cpp in Sources */,
 				3AF5FDD92188AA9A009EDC30 /* 804.cpp in Sources */,
+				3A3DC3812260E5D600A05771 /* 1302.cpp in Sources */,
 				3AC393C4216F95B100723A1B /* 709.cpp in Sources */,
 				3A39D03622033C7F0036828D /* 1102.cpp in Sources */,
 				3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */,
@@ -782,6 +805,7 @@
 				3A2FC6B121B5975200EEE2FE /* Person1002.cpp in Sources */,
 				3A2FC6AD21B5896800EEE2FE /* 1001.cpp in Sources */,
 				3AF5FDE22188BD10009EDC30 /* 807.cpp in Sources */,
+				3A3DC37F2260E5CC00A05771 /* classic1302.cpp in Sources */,
 				3AF25BD8216E48F10044A953 /* 705.cpp in Sources */,
 				3AC393C1216F8DE800723A1B /* 708b.cpp in Sources */,
 				3ADA7BE722295AB400F8064F /* 1205a.cpp in Sources */,
