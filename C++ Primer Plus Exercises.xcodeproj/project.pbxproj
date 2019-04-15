@@ -416,6 +416,7 @@
 				3A61325E2260C8D800569D33 /* 1301 */,
 				3A3DC3792260E56000A05771 /* 1302 */,
 				3AC24B7422648889005E48A6 /* 1303 */,
+				3AC24B7A2264C054005E48A6 /* 1304 */,
 			);
 			path = "Chapter 13";
 			sourceTree = "<group>";
@@ -552,6 +553,13 @@
 				3AC24B782264A4B3005E48A6 /* 1303.cpp */,
 			);
 			path = 1303;
+			sourceTree = "<group>";
+		};
+		3AC24B7A2264C054005E48A6 /* 1304 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 1304;
 			sourceTree = "<group>";
 		};
 		3AD3ED8920EBD8F3008D28BF = {

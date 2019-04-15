@@ -44,7 +44,7 @@ namespace e1303
     
     std::ostream& operator<<(std::ostream& os, const AbstractDMA& ad)
     {
-        os << ad.getType() << " object \"" << ad.getLabel() << "\"";
+        os << ad.getType() << " object \"" << ad.m_label << "\"";   // can access m_label directly
         return os;
     }
     
@@ -61,7 +61,7 @@ namespace e1303
     
     std::ostream& operator<<(std::ostream& os, const BaseDMA& bd)
     {
-        os << "BaseDMA object \"" << bd.getLabel() << "\"";
+        os << "BaseDMA object \"" << bd.getLabel() << "\"";         // can't access m_label directly
         return os;
     }
     
@@ -84,7 +84,7 @@ namespace e1303
     
     std::ostream& operator<<(std::ostream& os, const LacksDMA& ld)
     {
-        os << "LacksDMA object \"" << ld.getLabel() << "\"";
+        os << "LacksDMA object \"" << ld.getLabel() << "\"";        // can't access m_label directly
         return os;
     }
     
@@ -131,7 +131,7 @@ namespace e1303
     
     std::ostream& operator<<(std::ostream& os, const HasDMA& hd)
     {
-        os << "HasDMA object \"" << hd.getLabel() << "\"";
+        os << "HasDMA object \"" << hd.getLabel() << "\"";          // can't access m_label directly
         return os;
     }
     
