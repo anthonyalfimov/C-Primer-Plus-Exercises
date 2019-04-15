@@ -58,6 +58,9 @@
 		3A9C17AF216F8B8100F99D49 /* 708a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C17AD216F8B8100F99D49 /* 708a.cpp */; };
 		3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415B215BB0CB00BBB074 /* 604.cpp */; };
 		3AAA4160215BE02B00BBB074 /* 607.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415E215BE02B00BBB074 /* 607.cpp */; };
+		3AAA6E452264C6AE005D3FAC /* Port1304.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA6E432264C6AE005D3FAC /* Port1304.cpp */; };
+		3AAA6E482264C943005D3FAC /* VintagePort1304.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA6E462264C943005D3FAC /* VintagePort1304.cpp */; };
+		3AAA6E4A2264D223005D3FAC /* 1304.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA6E492264D223005D3FAC /* 1304.cpp */; };
 		3ABF8473222D470C00A5C506 /* 1206.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ABF8472222D470C00A5C506 /* 1206.cpp */; };
 		3AC24B77226489DD005E48A6 /* DMA1303.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC24B75226489DD005E48A6 /* DMA1303.cpp */; };
 		3AC24B792264A4B3005E48A6 /* 1303.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC24B782264A4B3005E48A6 /* 1303.cpp */; };
@@ -184,6 +187,11 @@
 		3A9C17AD216F8B8100F99D49 /* 708a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 708a.cpp; sourceTree = "<group>"; };
 		3AAA415B215BB0CB00BBB074 /* 604.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 604.cpp; sourceTree = "<group>"; };
 		3AAA415E215BE02B00BBB074 /* 607.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 607.cpp; sourceTree = "<group>"; };
+		3AAA6E432264C6AE005D3FAC /* Port1304.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Port1304.cpp; sourceTree = "<group>"; };
+		3AAA6E442264C6AE005D3FAC /* Port1304.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Port1304.hpp; sourceTree = "<group>"; };
+		3AAA6E462264C943005D3FAC /* VintagePort1304.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VintagePort1304.cpp; sourceTree = "<group>"; };
+		3AAA6E472264C943005D3FAC /* VintagePort1304.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VintagePort1304.hpp; sourceTree = "<group>"; };
+		3AAA6E492264D223005D3FAC /* 1304.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1304.cpp; sourceTree = "<group>"; };
 		3ABF8472222D470C00A5C506 /* 1206.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1206.cpp; sourceTree = "<group>"; };
 		3AC24B75226489DD005E48A6 /* DMA1303.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DMA1303.cpp; sourceTree = "<group>"; };
 		3AC24B76226489DD005E48A6 /* DMA1303.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DMA1303.hpp; sourceTree = "<group>"; };
@@ -558,6 +566,11 @@
 		3AC24B7A2264C054005E48A6 /* 1304 */ = {
 			isa = PBXGroup;
 			children = (
+				3AAA6E432264C6AE005D3FAC /* Port1304.cpp */,
+				3AAA6E442264C6AE005D3FAC /* Port1304.hpp */,
+				3AAA6E462264C943005D3FAC /* VintagePort1304.cpp */,
+				3AAA6E472264C943005D3FAC /* VintagePort1304.hpp */,
+				3AAA6E492264D223005D3FAC /* 1304.cpp */,
 			);
 			path = 1304;
 			sourceTree = "<group>";
@@ -765,6 +778,7 @@
 				3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */,
 				3AF5FDDF2188B6B7009EDC30 /* 806.cpp in Sources */,
 				3A39D03C220345400036828D /* 1103.cpp in Sources */,
+				3AAA6E4A2264D223005D3FAC /* 1304.cpp in Sources */,
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
 				3ADA7BE1222957A700F8064F /* Customer1200.cpp in Sources */,
 				3A3DC37C2260E5BB00A05771 /* cd1302.cpp in Sources */,
@@ -806,6 +820,7 @@
 				3AD6B00E21A2F8F500A344EA /* 902.cpp in Sources */,
 				3A39D03A220345360036828D /* Vector1103.cpp in Sources */,
 				3AF25BCF216E28C50044A953 /* 702.cpp in Sources */,
+				3AAA6E482264C943005D3FAC /* VintagePort1304.cpp in Sources */,
 				3ADA52E52226E58300F12BE9 /* Stock1203.cpp in Sources */,
 				3A6132612260C90A00569D33 /* cd1301.cpp in Sources */,
 				3A047DEB219EDE6500245EE1 /* golf901.cpp in Sources */,
@@ -828,6 +843,7 @@
 				3A49E85F21B82FE2004CC9C7 /* 1008b.cpp in Sources */,
 				3AF25BD2216E35C60044A953 /* 703.cpp in Sources */,
 				3A7C1A8F21B6BF36005FA9F3 /* 1004.cpp in Sources */,
+				3AAA6E452264C6AE005D3FAC /* Port1304.cpp in Sources */,
 				3A2FC6B121B5975200EEE2FE /* Person1002.cpp in Sources */,
 				3A2FC6AD21B5896800EEE2FE /* 1001.cpp in Sources */,
 				3AF5FDE22188BD10009EDC30 /* 807.cpp in Sources */,
