@@ -1,5 +1,5 @@
 //
-//  WineType1401.cpp
+//  WineType1402.cpp
 //  C++ Primer Plus Exercises
 //
 //  Created by Anthony on 26/06/2019.
@@ -7,18 +7,18 @@
 //
 
 #include <iostream>
-#include "WineType1401.hpp"
+#include "WineType1402.hpp"
 
-namespace e1401
+namespace e1402
 {
     Wine::Wine (const char* label, int yearCount, const int years[], const int bottles[])
-        : mLabel (label), mYearCount (yearCount),
-          mYearsAndBottles (ArrayInt (years, yearCount), ArrayInt (bottles, yearCount))
+        : std::string (label), mYearCount (yearCount),
+          PairArrayInt (ArrayInt (years, yearCount), ArrayInt (bottles, yearCount))
     {}
     
     Wine::Wine (const char* label, int yearCount)
-        : mLabel (label), mYearCount (yearCount),
-          mYearsAndBottles (ArrayInt (yearCount), ArrayInt (yearCount))
+        : std::string (label), mYearCount (yearCount),
+          PairArrayInt (ArrayInt (yearCount), ArrayInt (yearCount))
     {}
     
     
@@ -39,7 +39,7 @@ namespace e1401
                 std::cout << "Invalid! Enter year: ";
             }
             
-            mYearsAndBottles.first()[i] = inputYear;
+            PairArrayInt::first()[i] = inputYear;
             
             while (std::cin.get() != '\n')
                 continue;
@@ -54,7 +54,7 @@ namespace e1401
                 std::cout << "Invalid! Enter number of bottles: ";
             }
             
-            mYearsAndBottles.second()[i] = inputBottles;
+            PairArrayInt::second()[i] = inputBottles;
             
             while (std::cin.get() != '\n')
                 continue;
@@ -63,11 +63,12 @@ namespace e1401
     
     void Wine::display() const
     {
-        std::cout << "Wine: " << mLabel << "\n"
+        std::cout << "Wine: " << (const std::string&) *this << "\n"
                   << "\tYear\tBottles\n";
         
         for (int i = 0; i < mYearCount; ++i)
-            std::cout << "\t" << mYearsAndBottles.first()[i]
-                      << "\t" << mYearsAndBottles.second()[i] << "\n";
+            std::cout << "\t" << PairArrayInt::first()[i]
+                      << "\t" << PairArrayInt::second()[i] << "\n";
     }
-}   // end namespace e1401
+}   // end namespace e1402
+

@@ -22,6 +22,8 @@
 		3A39D040220352180036828D /* Time1104.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D03E220352180036828D /* Time1104.cpp */; };
 		3A39D042220352210036828D /* 1104.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D041220352210036828D /* 1104.cpp */; };
 		3A3B18E622C3B8DE00CA67A4 /* WineType1401.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B18E422C3B8DE00CA67A4 /* WineType1401.cpp */; };
+		3A3B18EB22C3DB8200CA67A4 /* WineType1402.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B18E922C3DB8200CA67A4 /* WineType1402.cpp */; };
+		3A3B18ED22C3DD1800CA67A4 /* 1402.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B18EC22C3DD1800CA67A4 /* 1402.cpp */; };
 		3A3DC37C2260E5BB00A05771 /* cd1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC37A2260E5BB00A05771 /* cd1302.cpp */; };
 		3A3DC37F2260E5CC00A05771 /* classic1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC37D2260E5CC00A05771 /* classic1302.cpp */; };
 		3A3DC3812260E5D600A05771 /* 1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC3802260E5D600A05771 /* 1302.cpp */; };
@@ -135,6 +137,10 @@
 		3A39D041220352210036828D /* 1104.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1104.cpp; sourceTree = "<group>"; };
 		3A3B18E422C3B8DE00CA67A4 /* WineType1401.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WineType1401.cpp; sourceTree = "<group>"; };
 		3A3B18E522C3B8DE00CA67A4 /* WineType1401.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WineType1401.hpp; sourceTree = "<group>"; };
+		3A3B18E822C3DB5600CA67A4 /* PairType1402.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PairType1402.hpp; sourceTree = "<group>"; };
+		3A3B18E922C3DB8200CA67A4 /* WineType1402.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WineType1402.cpp; sourceTree = "<group>"; };
+		3A3B18EA22C3DB8200CA67A4 /* WineType1402.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WineType1402.hpp; sourceTree = "<group>"; };
+		3A3B18EC22C3DD1800CA67A4 /* 1402.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1402.cpp; sourceTree = "<group>"; };
 		3A3DC37A2260E5BB00A05771 /* cd1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cd1302.cpp; sourceTree = "<group>"; };
 		3A3DC37B2260E5BB00A05771 /* cd1302.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cd1302.hpp; sourceTree = "<group>"; };
 		3A3DC37D2260E5CC00A05771 /* classic1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classic1302.cpp; sourceTree = "<group>"; };
@@ -358,6 +364,17 @@
 			path = 1104;
 			sourceTree = "<group>";
 		};
+		3A3B18E722C3DB3B00CA67A4 /* 1402 */ = {
+			isa = PBXGroup;
+			children = (
+				3A3B18E822C3DB5600CA67A4 /* PairType1402.hpp */,
+				3A3B18E922C3DB8200CA67A4 /* WineType1402.cpp */,
+				3A3B18EA22C3DB8200CA67A4 /* WineType1402.hpp */,
+				3A3B18EC22C3DD1800CA67A4 /* 1402.cpp */,
+			);
+			path = 1402;
+			sourceTree = "<group>";
+		};
 		3A3DC3792260E56000A05771 /* 1302 */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				3AADB4CF22C27C9600C91320 /* 1401 */,
+				3A3B18E722C3DB3B00CA67A4 /* 1402 */,
 			);
 			path = "Chapter 14";
 			sourceTree = "<group>";
@@ -806,6 +824,7 @@
 				3A39D03C220345400036828D /* 1103.cpp in Sources */,
 				3AAA6E4A2264D223005D3FAC /* 1304.cpp in Sources */,
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
+				3A3B18EB22C3DB8200CA67A4 /* WineType1402.cpp in Sources */,
 				3ADA7BE1222957A700F8064F /* Customer1200.cpp in Sources */,
 				3A3DC37C2260E5BB00A05771 /* cd1302.cpp in Sources */,
 				3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */,
@@ -834,6 +853,7 @@
 				3A66E6B9220468A000C701AF /* 1105.cpp in Sources */,
 				3ADA52E72226E67F00F12BE9 /* 1203.cpp in Sources */,
 				3AD3ED9620EBD8F3008D28BF /* main.cpp in Sources */,
+				3A3B18ED22C3DD1800CA67A4 /* 1402.cpp in Sources */,
 				3A49E85921B809EE004CC9C7 /* 1008a.cpp in Sources */,
 				3AC24B792264A4B3005E48A6 /* 1303.cpp in Sources */,
 				3AF5FDD92188AA9A009EDC30 /* 804.cpp in Sources */,
