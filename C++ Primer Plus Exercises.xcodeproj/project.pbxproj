@@ -21,6 +21,7 @@
 		3A39D03C220345400036828D /* 1103.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D03B220345400036828D /* 1103.cpp */; };
 		3A39D040220352180036828D /* Time1104.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D03E220352180036828D /* Time1104.cpp */; };
 		3A39D042220352210036828D /* 1104.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A39D041220352210036828D /* 1104.cpp */; };
+		3A3B18E622C3B8DE00CA67A4 /* WineType1401.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B18E422C3B8DE00CA67A4 /* WineType1401.cpp */; };
 		3A3DC37C2260E5BB00A05771 /* cd1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC37A2260E5BB00A05771 /* cd1302.cpp */; };
 		3A3DC37F2260E5CC00A05771 /* classic1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC37D2260E5CC00A05771 /* classic1302.cpp */; };
 		3A3DC3812260E5D600A05771 /* 1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC3802260E5D600A05771 /* 1302.cpp */; };
@@ -37,6 +38,7 @@
 		3A6132612260C90A00569D33 /* cd1301.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A61325F2260C90A00569D33 /* cd1301.cpp */; };
 		3A6132642260CBBF00569D33 /* classic1301.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6132622260CBBF00569D33 /* classic1301.cpp */; };
 		3A6132662260CC0600569D33 /* 1301.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6132652260CC0600569D33 /* 1301.cpp */; };
+		3A656D6822C3B35900C12A47 /* 1401.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A656D6722C3B35900C12A47 /* 1401.cpp */; };
 		3A659816222694400059FFC0 /* Cow1201.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A659814222694400059FFC0 /* Cow1201.cpp */; };
 		3A6598182226BAF90059FFC0 /* 1201.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6598172226BAF90059FFC0 /* 1201.cpp */; };
 		3A66E6B72204689600C701AF /* Stonewt1105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A66E6B52204689600C701AF /* Stonewt1105.cpp */; };
@@ -131,6 +133,8 @@
 		3A39D03E220352180036828D /* Time1104.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time1104.cpp; sourceTree = "<group>"; };
 		3A39D03F220352180036828D /* Time1104.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time1104.hpp; sourceTree = "<group>"; };
 		3A39D041220352210036828D /* 1104.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1104.cpp; sourceTree = "<group>"; };
+		3A3B18E422C3B8DE00CA67A4 /* WineType1401.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WineType1401.cpp; sourceTree = "<group>"; };
+		3A3B18E522C3B8DE00CA67A4 /* WineType1401.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WineType1401.hpp; sourceTree = "<group>"; };
 		3A3DC37A2260E5BB00A05771 /* cd1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cd1302.cpp; sourceTree = "<group>"; };
 		3A3DC37B2260E5BB00A05771 /* cd1302.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cd1302.hpp; sourceTree = "<group>"; };
 		3A3DC37D2260E5CC00A05771 /* classic1302.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classic1302.cpp; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		3A6132632260CBBF00569D33 /* classic1301.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classic1301.hpp; sourceTree = "<group>"; };
 		3A6132652260CC0600569D33 /* 1301.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1301.cpp; sourceTree = "<group>"; };
 		3A65668B21592D9300ACDA13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A656D6722C3B35900C12A47 /* 1401.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1401.cpp; sourceTree = "<group>"; };
+		3A656D6922C3B43500C12A47 /* PairType1401.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PairType1401.hpp; sourceTree = "<group>"; };
 		3A659814222694400059FFC0 /* Cow1201.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cow1201.cpp; sourceTree = "<group>"; };
 		3A659815222694400059FFC0 /* Cow1201.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cow1201.hpp; sourceTree = "<group>"; };
 		3A6598172226BAF90059FFC0 /* 1201.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1201.cpp; sourceTree = "<group>"; };
@@ -545,6 +551,25 @@
 			path = 1006;
 			sourceTree = "<group>";
 		};
+		3AADB4CE22C27C7500C91320 /* Chapter 14 */ = {
+			isa = PBXGroup;
+			children = (
+				3AADB4CF22C27C9600C91320 /* 1401 */,
+			);
+			path = "Chapter 14";
+			sourceTree = "<group>";
+		};
+		3AADB4CF22C27C9600C91320 /* 1401 */ = {
+			isa = PBXGroup;
+			children = (
+				3A656D6922C3B43500C12A47 /* PairType1401.hpp */,
+				3A3B18E422C3B8DE00CA67A4 /* WineType1401.cpp */,
+				3A3B18E522C3B8DE00CA67A4 /* WineType1401.hpp */,
+				3A656D6722C3B35900C12A47 /* 1401.cpp */,
+			);
+			path = 1401;
+			sourceTree = "<group>";
+		};
 		3ABF8471222D46EA00A5C506 /* 1206 */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,6 +628,7 @@
 				3A4333A722009B8400F5A756 /* Chapter 11 */,
 				3A659812222694160059FFC0 /* Chapter 12 */,
 				3A61325D2260C8AF00569D33 /* Chapter 13 */,
+				3AADB4CE22C27C7500C91320 /* Chapter 14 */,
 				3A68487C215126EB004C5F68 /* Experiments */,
 				3A24FC1821BEA76B00EB1EB2 /* Data Structures */,
 				3AD3ED9520EBD8F3008D28BF /* main.cpp */,
@@ -831,6 +857,7 @@
 				3A39D042220352210036828D /* 1104.cpp in Sources */,
 				3AF5FDD62188A237009EDC30 /* 803.cpp in Sources */,
 				3AF25BCC216E23E10044A953 /* 701.cpp in Sources */,
+				3A656D6822C3B35900C12A47 /* 1401.cpp in Sources */,
 				3A7C1A9321B6CE0B005FA9F3 /* Stack1005.cpp in Sources */,
 				3AD1F351215A81F0004CFE88 /* 601.cpp in Sources */,
 				3A83BFA02228359500938104 /* Stack1204.cpp in Sources */,
@@ -852,6 +879,7 @@
 				3AC393C1216F8DE800723A1B /* 708b.cpp in Sources */,
 				3ADA7BE722295AB400F8064F /* 1205a.cpp in Sources */,
 				3A7C1A8721B69579005FA9F3 /* golf1003.cpp in Sources */,
+				3A3B18E622C3B8DE00CA67A4 /* WineType1401.cpp in Sources */,
 				3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */,
 				3A6598182226BAF90059FFC0 /* 1201.cpp in Sources */,
 				3A66E6B72204689600C701AF /* Stonewt1105.cpp in Sources */,
