@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A047DE6219EDE5600245EE1 /* 901.cpp */; };
 		3A047DEB219EDE6500245EE1 /* golf901.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A047DE9219EDE6500245EE1 /* golf901.cpp */; };
+		3A0C224022C4F8E6006D5743 /* 1403.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C223F22C4F8E6006D5743 /* 1403.cpp */; };
+		3A0C224322C500EB006D5743 /* WorkerType1403.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C224122C500EB006D5743 /* WorkerType1403.cpp */; };
 		3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */; };
 		3A24FC1E21BEA7DB00EB1EB2 /* LinkedList01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */; };
 		3A2FC6AB21B5837900EEE2FE /* BankAccount1001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6A921B5837900EEE2FE /* BankAccount1001.cpp */; };
@@ -117,6 +119,10 @@
 		3A047DE6219EDE5600245EE1 /* 901.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 901.cpp; sourceTree = "<group>"; };
 		3A047DE9219EDE6500245EE1 /* golf901.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = golf901.cpp; sourceTree = "<group>"; };
 		3A047DEA219EDE6500245EE1 /* golf901.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = golf901.hpp; sourceTree = "<group>"; };
+		3A0C223E22C4F759006D5743 /* QueueType1403.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QueueType1403.hpp; sourceTree = "<group>"; };
+		3A0C223F22C4F8E6006D5743 /* 1403.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1403.cpp; sourceTree = "<group>"; };
+		3A0C224122C500EB006D5743 /* WorkerType1403.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WorkerType1403.cpp; sourceTree = "<group>"; };
+		3A0C224222C500EB006D5743 /* WorkerType1403.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkerType1403.hpp; sourceTree = "<group>"; };
 		3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListType01.cpp; sourceTree = "<group>"; };
 		3A24FC1B21BEA7C800EB1EB2 /* LinkedListType01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListType01.hpp; sourceTree = "<group>"; };
 		3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList01.cpp; sourceTree = "<group>"; };
@@ -375,6 +381,17 @@
 			path = 1402;
 			sourceTree = "<group>";
 		};
+		3A3B18EE22C3DF2A00CA67A4 /* 1403 */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C223E22C4F759006D5743 /* QueueType1403.hpp */,
+				3A0C224122C500EB006D5743 /* WorkerType1403.cpp */,
+				3A0C224222C500EB006D5743 /* WorkerType1403.hpp */,
+				3A0C223F22C4F8E6006D5743 /* 1403.cpp */,
+			);
+			path = 1403;
+			sourceTree = "<group>";
+		};
 		3A3DC3792260E56000A05771 /* 1302 */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +590,7 @@
 			children = (
 				3AADB4CF22C27C9600C91320 /* 1401 */,
 				3A3B18E722C3DB3B00CA67A4 /* 1402 */,
+				3A3B18EE22C3DF2A00CA67A4 /* 1403 */,
 			);
 			path = "Chapter 14";
 			sourceTree = "<group>";
@@ -870,9 +888,11 @@
 				3ADA52E52226E58300F12BE9 /* Stock1203.cpp in Sources */,
 				3A6132612260C90A00569D33 /* cd1301.cpp in Sources */,
 				3A047DEB219EDE6500245EE1 /* golf901.cpp in Sources */,
+				3A0C224022C4F8E6006D5743 /* 1403.cpp in Sources */,
 				3AC393C7216FAB5200723A1B /* 710.cpp in Sources */,
 				3ADA52E12226D1AA00F12BE9 /* 1202.cpp in Sources */,
 				3A78C6C4216F840A00549680 /* 707.cpp in Sources */,
+				3A0C224322C500EB006D5743 /* WorkerType1403.cpp in Sources */,
 				3A66E6BD22047BFD00C701AF /* Stonewt1106.cpp in Sources */,
 				3A39D042220352210036828D /* 1104.cpp in Sources */,
 				3AF5FDD62188A237009EDC30 /* 803.cpp in Sources */,

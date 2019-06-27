@@ -21,7 +21,7 @@ namespace e1401
         Wine (const char* label, int yearCount, const int years[], const int bottles[]);
         Wine (const char* label, int yearCount);
         
-        virtual ~Wine() {};
+        virtual ~Wine() {}
         
         const std::string& getLabel() const { return mLabel; }
         int getBottlesTotal() const { return mYearsAndBottles.second().sum(); }
