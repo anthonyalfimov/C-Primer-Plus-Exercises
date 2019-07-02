@@ -65,7 +65,7 @@ namespace e1403
     
 //  Singer methods
     
-    const char* Singer::sVoiceLabels[] =
+    const char* Singer::sVoiceLabels[]
     {
         "other", "alto", "contralto", "soprano",
         "bass", "baritone", "tenor"

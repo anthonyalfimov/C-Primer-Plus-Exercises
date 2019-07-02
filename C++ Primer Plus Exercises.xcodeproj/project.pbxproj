@@ -11,6 +11,8 @@
 		3A047DEB219EDE6500245EE1 /* golf901.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A047DE9219EDE6500245EE1 /* golf901.cpp */; };
 		3A0C224022C4F8E6006D5743 /* 1403.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C223F22C4F8E6006D5743 /* 1403.cpp */; };
 		3A0C224322C500EB006D5743 /* WorkerType1403.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C224122C500EB006D5743 /* WorkerType1403.cpp */; };
+		3A2053BA22CB79560003B4E5 /* CardType1404.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2053B822CB79560003B4E5 /* CardType1404.cpp */; };
+		3A2053BD22CB844D0003B4E5 /* PersonType1404.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2053BB22CB844D0003B4E5 /* PersonType1404.cpp */; };
 		3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */; };
 		3A24FC1E21BEA7DB00EB1EB2 /* LinkedList01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */; };
 		3A2FC6AB21B5837900EEE2FE /* BankAccount1001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC6A921B5837900EEE2FE /* BankAccount1001.cpp */; };
@@ -88,6 +90,7 @@
 		3ADA7BE52229595900F8064F /* Queue1200.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7BE32229595900F8064F /* Queue1200.cpp */; };
 		3ADA7BE722295AB400F8064F /* 1205a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7BE622295AB400F8064F /* 1205a.cpp */; };
 		3ADA7BE92229946D00F8064F /* 1205b.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7BE82229946D00F8064F /* 1205b.cpp */; };
+		3AE6D00622CBCECC00EB950D /* 1404.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6D00522CBCECC00EB950D /* 1404.cpp */; };
 		3AF25BCC216E23E10044A953 /* 701.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AF25BCA216E23E10044A953 /* 701.cpp */; };
 		3AF25BCF216E28C50044A953 /* 702.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AF25BCD216E28C50044A953 /* 702.cpp */; };
 		3AF25BD2216E35C60044A953 /* 703.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AF25BD0216E35C60044A953 /* 703.cpp */; };
@@ -123,6 +126,10 @@
 		3A0C223F22C4F8E6006D5743 /* 1403.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1403.cpp; sourceTree = "<group>"; };
 		3A0C224122C500EB006D5743 /* WorkerType1403.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WorkerType1403.cpp; sourceTree = "<group>"; };
 		3A0C224222C500EB006D5743 /* WorkerType1403.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkerType1403.hpp; sourceTree = "<group>"; };
+		3A2053B822CB79560003B4E5 /* CardType1404.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CardType1404.cpp; sourceTree = "<group>"; };
+		3A2053B922CB79560003B4E5 /* CardType1404.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardType1404.hpp; sourceTree = "<group>"; };
+		3A2053BB22CB844D0003B4E5 /* PersonType1404.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PersonType1404.cpp; sourceTree = "<group>"; };
+		3A2053BC22CB844D0003B4E5 /* PersonType1404.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PersonType1404.hpp; sourceTree = "<group>"; };
 		3A24FC1A21BEA7C800EB1EB2 /* LinkedListType01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListType01.cpp; sourceTree = "<group>"; };
 		3A24FC1B21BEA7C800EB1EB2 /* LinkedListType01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListType01.hpp; sourceTree = "<group>"; };
 		3A24FC1D21BEA7DB00EB1EB2 /* LinkedList01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList01.cpp; sourceTree = "<group>"; };
@@ -239,6 +246,7 @@
 		3ADA7BE42229595900F8064F /* Queue1200.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue1200.hpp; sourceTree = "<group>"; };
 		3ADA7BE622295AB400F8064F /* 1205a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1205a.cpp; sourceTree = "<group>"; };
 		3ADA7BE82229946D00F8064F /* 1205b.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1205b.cpp; sourceTree = "<group>"; };
+		3AE6D00522CBCECC00EB950D /* 1404.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1404.cpp; sourceTree = "<group>"; };
 		3AF25BCA216E23E10044A953 /* 701.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 701.cpp; sourceTree = "<group>"; };
 		3AF25BCD216E28C50044A953 /* 702.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 702.cpp; sourceTree = "<group>"; };
 		3AF25BD0216E35C60044A953 /* 703.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 703.cpp; sourceTree = "<group>"; };
@@ -284,6 +292,18 @@
 				3A047DEA219EDE6500245EE1 /* golf901.hpp */,
 			);
 			path = 901;
+			sourceTree = "<group>";
+		};
+		3A2053B722CB78960003B4E5 /* 1404 */ = {
+			isa = PBXGroup;
+			children = (
+				3A2053B822CB79560003B4E5 /* CardType1404.cpp */,
+				3A2053B922CB79560003B4E5 /* CardType1404.hpp */,
+				3A2053BB22CB844D0003B4E5 /* PersonType1404.cpp */,
+				3A2053BC22CB844D0003B4E5 /* PersonType1404.hpp */,
+				3AE6D00522CBCECC00EB950D /* 1404.cpp */,
+			);
+			path = 1404;
 			sourceTree = "<group>";
 		};
 		3A24FC1821BEA76B00EB1EB2 /* Data Structures */ = {
@@ -591,6 +611,7 @@
 				3AADB4CF22C27C9600C91320 /* 1401 */,
 				3A3B18E722C3DB3B00CA67A4 /* 1402 */,
 				3A3B18EE22C3DF2A00CA67A4 /* 1403 */,
+				3A2053B722CB78960003B4E5 /* 1404 */,
 			);
 			path = "Chapter 14";
 			sourceTree = "<group>";
@@ -839,6 +860,7 @@
 				3A24FC1E21BEA7DB00EB1EB2 /* LinkedList01.cpp in Sources */,
 				3A24FC1C21BEA7C800EB1EB2 /* LinkedListType01.cpp in Sources */,
 				3AF5FDDF2188B6B7009EDC30 /* 806.cpp in Sources */,
+				3A2053BA22CB79560003B4E5 /* CardType1404.cpp in Sources */,
 				3A39D03C220345400036828D /* 1103.cpp in Sources */,
 				3AAA6E4A2264D223005D3FAC /* 1304.cpp in Sources */,
 				3AF5FDD0218897CD009EDC30 /* 801.cpp in Sources */,
@@ -866,7 +888,9 @@
 				3A49E85321B7E792004CC9C7 /* 1007.cpp in Sources */,
 				3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */,
 				3AD6B01821A30EF500A344EA /* 904.cpp in Sources */,
+				3AE6D00622CBCECC00EB950D /* 1404.cpp in Sources */,
 				3AC24B77226489DD005E48A6 /* DMA1303.cpp in Sources */,
+				3A2053BD22CB844D0003B4E5 /* PersonType1404.cpp in Sources */,
 				3A49E85D21B818AD004CC9C7 /* SimpleListB.cpp in Sources */,
 				3A66E6B9220468A000C701AF /* 1105.cpp in Sources */,
 				3ADA52E72226E67F00F12BE9 /* 1203.cpp in Sources */,
