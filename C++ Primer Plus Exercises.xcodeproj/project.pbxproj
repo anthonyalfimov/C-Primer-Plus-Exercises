@@ -33,6 +33,8 @@
 		3A3DC3812260E5D600A05771 /* 1302.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DC3802260E5D600A05771 /* 1302.cpp */; };
 		3A4333AB22009BAF00F5A756 /* Vector1101.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4333A922009BAF00F5A756 /* Vector1101.cpp */; };
 		3A4333AD22009BBE00F5A756 /* 1101.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4333AC22009BBE00F5A756 /* 1101.cpp */; };
+		3A44C22624D065D7004C8747 /* TvType1501.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C22424D065D6004C8747 /* TvType1501.cpp */; };
+		3A44C22824D085C8004C8747 /* 1501.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C22724D085C8004C8747 /* 1501.cpp */; };
 		3A49E85121B7E211004CC9C7 /* Plorg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E84F21B7E211004CC9C7 /* Plorg.cpp */; };
 		3A49E85321B7E792004CC9C7 /* 1007.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85221B7E792004CC9C7 /* 1007.cpp */; };
 		3A49E85721B8009A004CC9C7 /* SimpleListA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85521B8009A004CC9C7 /* SimpleListA.cpp */; };
@@ -164,6 +166,9 @@
 		3A4333A922009BAF00F5A756 /* Vector1101.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector1101.cpp; sourceTree = "<group>"; };
 		3A4333AA22009BAF00F5A756 /* Vector1101.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector1101.hpp; sourceTree = "<group>"; };
 		3A4333AC22009BBE00F5A756 /* 1101.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1101.cpp; sourceTree = "<group>"; };
+		3A44C22424D065D6004C8747 /* TvType1501.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TvType1501.cpp; sourceTree = "<group>"; };
+		3A44C22524D065D6004C8747 /* TvType1501.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TvType1501.hpp; sourceTree = "<group>"; };
+		3A44C22724D085C8004C8747 /* 1501.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1501.cpp; sourceTree = "<group>"; };
 		3A49E84F21B7E211004CC9C7 /* Plorg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plorg.cpp; sourceTree = "<group>"; };
 		3A49E85021B7E211004CC9C7 /* Plorg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Plorg.hpp; sourceTree = "<group>"; };
 		3A49E85221B7E792004CC9C7 /* 1007.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1007.cpp; sourceTree = "<group>"; };
@@ -453,6 +458,24 @@
 			path = 1101;
 			sourceTree = "<group>";
 		};
+		3A44C22224D06486004C8747 /* Chapter 15 */ = {
+			isa = PBXGroup;
+			children = (
+				3A44C22324D0649A004C8747 /* 1501 */,
+			);
+			path = "Chapter 15";
+			sourceTree = "<group>";
+		};
+		3A44C22324D0649A004C8747 /* 1501 */ = {
+			isa = PBXGroup;
+			children = (
+				3A44C22424D065D6004C8747 /* TvType1501.cpp */,
+				3A44C22524D065D6004C8747 /* TvType1501.hpp */,
+				3A44C22724D085C8004C8747 /* 1501.cpp */,
+			);
+			path = 1501;
+			sourceTree = "<group>";
+		};
 		3A49E84E21B7E1FB004CC9C7 /* 1007 */ = {
 			isa = PBXGroup;
 			children = (
@@ -702,6 +725,7 @@
 				3A659812222694160059FFC0 /* Chapter 12 */,
 				3A61325D2260C8AF00569D33 /* Chapter 13 */,
 				3AADB4CE22C27C7500C91320 /* Chapter 14 */,
+				3A44C22224D06486004C8747 /* Chapter 15 */,
 				3A68487C215126EB004C5F68 /* Experiments */,
 				3A24FC1821BEA76B00EB1EB2 /* Data Structures */,
 				3AD3ED9520EBD8F3008D28BF /* main.cpp */,
@@ -869,6 +893,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD7AEB6222841C800ABD60C /* 1204.cpp in Sources */,
+				3A44C22824D085C8004C8747 /* 1501.cpp in Sources */,
 				3AF5FDDC2188B3AC009EDC30 /* 805.cpp in Sources */,
 				3AF25BD5216E41150044A953 /* 704.cpp in Sources */,
 				3A66E6C52204A0A700C701AF /* 1107.cpp in Sources */,
@@ -938,6 +963,7 @@
 				3A66E6BD22047BFD00C701AF /* Stonewt1106.cpp in Sources */,
 				3A39D042220352210036828D /* 1104.cpp in Sources */,
 				3AF5FDD62188A237009EDC30 /* 803.cpp in Sources */,
+				3A44C22624D065D7004C8747 /* TvType1501.cpp in Sources */,
 				3AF25BCC216E23E10044A953 /* 701.cpp in Sources */,
 				3A656D6822C3B35900C12A47 /* 1401.cpp in Sources */,
 				3A7C1A9321B6CE0B005FA9F3 /* Stack1005.cpp in Sources */,
