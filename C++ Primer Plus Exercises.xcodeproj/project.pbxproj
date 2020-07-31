@@ -65,6 +65,7 @@
 		3A7C1A9A21B6E480005FA9F3 /* Move1006.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A9821B6E480005FA9F3 /* Move1006.cpp */; };
 		3A7C1A9C21B6E6CC005FA9F3 /* 1006.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */; };
 		3A83BFA02228359500938104 /* Stack1204.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A83BF9E2228359500938104 /* Stack1204.cpp */; };
+		3A93A53024D4709000D97A4A /* 1502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A52F24D4709000D97A4A /* 1502.cpp */; };
 		3A9C17AF216F8B8100F99D49 /* 708a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C17AD216F8B8100F99D49 /* 708a.cpp */; };
 		3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415B215BB0CB00BBB074 /* 604.cpp */; };
 		3AAA4160215BE02B00BBB074 /* 607.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415E215BE02B00BBB074 /* 607.cpp */; };
@@ -216,6 +217,8 @@
 		3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1006.cpp; sourceTree = "<group>"; };
 		3A83BF9E2228359500938104 /* Stack1204.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack1204.cpp; sourceTree = "<group>"; };
 		3A83BF9F2228359500938104 /* Stack1204.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack1204.hpp; sourceTree = "<group>"; };
+		3A93A52E24D4701F00D97A4A /* MeanExcept1502.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MeanExcept1502.hpp; sourceTree = "<group>"; };
+		3A93A52F24D4709000D97A4A /* 1502.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1502.cpp; sourceTree = "<group>"; };
 		3A9C17AD216F8B8100F99D49 /* 708a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 708a.cpp; sourceTree = "<group>"; };
 		3AAA415B215BB0CB00BBB074 /* 604.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 604.cpp; sourceTree = "<group>"; };
 		3AAA415E215BE02B00BBB074 /* 607.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 607.cpp; sourceTree = "<group>"; };
@@ -462,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				3A44C22324D0649A004C8747 /* 1501 */,
+				3A93A52D24D46F7E00D97A4A /* 1502 */,
 			);
 			path = "Chapter 15";
 			sourceTree = "<group>";
@@ -631,6 +635,15 @@
 				3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */,
 			);
 			path = 1006;
+			sourceTree = "<group>";
+		};
+		3A93A52D24D46F7E00D97A4A /* 1502 */ = {
+			isa = PBXGroup;
+			children = (
+				3A93A52E24D4701F00D97A4A /* MeanExcept1502.hpp */,
+				3A93A52F24D4709000D97A4A /* 1502.cpp */,
+			);
+			path = 1502;
 			sourceTree = "<group>";
 		};
 		3AADB4CE22C27C7500C91320 /* Chapter 14 */ = {
@@ -937,6 +950,7 @@
 				3A49E85D21B818AD004CC9C7 /* SimpleListB.cpp in Sources */,
 				3A66E6B9220468A000C701AF /* 1105.cpp in Sources */,
 				3ADA52E72226E67F00F12BE9 /* 1203.cpp in Sources */,
+				3A93A53024D4709000D97A4A /* 1502.cpp in Sources */,
 				3AD3ED9620EBD8F3008D28BF /* main.cpp in Sources */,
 				3A3B18ED22C3DD1800CA67A4 /* 1402.cpp in Sources */,
 				3A49E85921B809EE004CC9C7 /* 1008a.cpp in Sources */,
