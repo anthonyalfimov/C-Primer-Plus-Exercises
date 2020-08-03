@@ -65,6 +65,8 @@
 		3A7C1A9A21B6E480005FA9F3 /* Move1006.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A9821B6E480005FA9F3 /* Move1006.cpp */; };
 		3A7C1A9C21B6E6CC005FA9F3 /* 1006.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */; };
 		3A83BFA02228359500938104 /* Stack1204.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A83BF9E2228359500938104 /* Stack1204.cpp */; };
+		3A86473224D84C9C002F765A /* 1503.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A86473124D84C9C002F765A /* 1503.cpp */; };
+		3A86473424D85465002F765A /* MeanExcept1503.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A86473324D85465002F765A /* MeanExcept1503.cpp */; };
 		3A93A53024D4709000D97A4A /* 1502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A52F24D4709000D97A4A /* 1502.cpp */; };
 		3A9C17AF216F8B8100F99D49 /* 708a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C17AD216F8B8100F99D49 /* 708a.cpp */; };
 		3AAA415D215BB0CB00BBB074 /* 604.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA415B215BB0CB00BBB074 /* 604.cpp */; };
@@ -217,6 +219,9 @@
 		3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1006.cpp; sourceTree = "<group>"; };
 		3A83BF9E2228359500938104 /* Stack1204.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack1204.cpp; sourceTree = "<group>"; };
 		3A83BF9F2228359500938104 /* Stack1204.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack1204.hpp; sourceTree = "<group>"; };
+		3A86473024D84B9A002F765A /* MeanExcept1503.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MeanExcept1503.hpp; sourceTree = "<group>"; };
+		3A86473124D84C9C002F765A /* 1503.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1503.cpp; sourceTree = "<group>"; };
+		3A86473324D85465002F765A /* MeanExcept1503.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MeanExcept1503.cpp; sourceTree = "<group>"; };
 		3A93A52E24D4701F00D97A4A /* MeanExcept1502.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MeanExcept1502.hpp; sourceTree = "<group>"; };
 		3A93A52F24D4709000D97A4A /* 1502.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1502.cpp; sourceTree = "<group>"; };
 		3A9C17AD216F8B8100F99D49 /* 708a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 708a.cpp; sourceTree = "<group>"; };
@@ -466,6 +471,7 @@
 			children = (
 				3A44C22324D0649A004C8747 /* 1501 */,
 				3A93A52D24D46F7E00D97A4A /* 1502 */,
+				3A86472F24D84953002F765A /* 1503 */,
 			);
 			path = "Chapter 15";
 			sourceTree = "<group>";
@@ -635,6 +641,16 @@
 				3A7C1A9B21B6E6CC005FA9F3 /* 1006.cpp */,
 			);
 			path = 1006;
+			sourceTree = "<group>";
+		};
+		3A86472F24D84953002F765A /* 1503 */ = {
+			isa = PBXGroup;
+			children = (
+				3A86473024D84B9A002F765A /* MeanExcept1503.hpp */,
+				3A86473324D85465002F765A /* MeanExcept1503.cpp */,
+				3A86473124D84C9C002F765A /* 1503.cpp */,
+			);
+			path = 1503;
 			sourceTree = "<group>";
 		};
 		3A93A52D24D46F7E00D97A4A /* 1502 */ = {
@@ -933,6 +949,7 @@
 				3A49E85121B7E211004CC9C7 /* Plorg.cpp in Sources */,
 				3A39D03422033C760036828D /* Vector1102.cpp in Sources */,
 				3AF25BDB216E56AF0044A953 /* 706.cpp in Sources */,
+				3A86473224D84C9C002F765A /* 1503.cpp in Sources */,
 				3ADA52DF2226CE8800F12BE9 /* String1202.cpp in Sources */,
 				3A49E85721B8009A004CC9C7 /* SimpleListA.cpp in Sources */,
 				3A7C1A9A21B6E480005FA9F3 /* Move1006.cpp in Sources */,
@@ -942,6 +959,7 @@
 				3A4333AD22009BBE00F5A756 /* 1101.cpp in Sources */,
 				3A7C1A8D21B6AFCD005FA9F3 /* Sales1004.cpp in Sources */,
 				3A49E85321B7E792004CC9C7 /* 1007.cpp in Sources */,
+				3A86473424D85465002F765A /* MeanExcept1503.cpp in Sources */,
 				3A047DE8219EDE5600245EE1 /* 901.cpp in Sources */,
 				3AD6B01821A30EF500A344EA /* 904.cpp in Sources */,
 				3AE6D00622CBCECC00EB950D /* 1404.cpp in Sources */,
