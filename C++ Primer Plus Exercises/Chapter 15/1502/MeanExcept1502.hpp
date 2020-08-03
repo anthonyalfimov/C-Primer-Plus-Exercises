@@ -9,6 +9,7 @@
 #ifndef MeanExcept1502_h
 #define MeanExcept1502_h
 
+#include <string>
 #include <stdexcept>
 
 namespace e1502
