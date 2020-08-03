@@ -14,14 +14,14 @@ namespace e1503
     void BadHarmonicMean::report() const
     {
         std::cout
-            << "> Erron in " << mFunctionName << ": " << what() << "!\n"
+            << "> " << what() << "!\n"
             << "> Cannot compute the harmonic mean of " << mArgument1 << " and " << mArgument2 << "\n";
     }
 
     void BadGeometricMean::report() const
     {
         std::cout
-            << "> Erron in " << mFunctionName << ": " << what() << "\n"
+            << "> " << what() << "!\n"
             << "> Cannot compute the geometric mean of " << mArgument1 << " and " << mArgument2 << "\n";
     }
 }

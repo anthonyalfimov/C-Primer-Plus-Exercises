@@ -18,15 +18,14 @@ namespace e1503
     {
     public:
         BadMean (double arg1, double arg2, const std::string& functionName)
-            : std::logic_error ("invalid arguments for mean calculation"),
-              mArgument1 (arg1), mArgument2 (arg2), mFunctionName (functionName) {}
+            : std::logic_error ("Erron in " + functionName + ": invalid arguments for mean calculation"),
+              mArgument1 (arg1), mArgument2 (arg2) {}
         
         virtual void report() const = 0;
         
     protected:
         const double mArgument1;
         const double mArgument2;
-        const std::string mFunctionName;
     };
 
     class BadHarmonicMean : public BadMean
