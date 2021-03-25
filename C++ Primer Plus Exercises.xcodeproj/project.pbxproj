@@ -43,6 +43,7 @@
 		3A49E85F21B82FE2004CC9C7 /* 1008b.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A49E85E21B82FE2004CC9C7 /* 1008b.cpp */; };
 		3A4E1AB3215E382B00F9AEB3 /* ReadToVector01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */; };
 		3A5CC580215FDA6200FA308F /* CaesarCipher01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */; };
+		3A5CDD87260D106D00BD4213 /* 1601.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CDD86260D106D00BD4213 /* 1601.cpp */; };
 		3A6132612260C90A00569D33 /* cd1301.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A61325F2260C90A00569D33 /* cd1301.cpp */; };
 		3A6132642260CBBF00569D33 /* classic1301.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6132622260CBBF00569D33 /* classic1301.cpp */; };
 		3A6132662260CC0600569D33 /* 1301.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6132652260CC0600569D33 /* 1301.cpp */; };
@@ -185,6 +186,7 @@
 		3A49E85E21B82FE2004CC9C7 /* 1008b.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1008b.cpp; sourceTree = "<group>"; };
 		3A4E1AB1215E382B00F9AEB3 /* ReadToVector01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReadToVector01.cpp; sourceTree = "<group>"; };
 		3A5CC57E215FDA6200FA308F /* CaesarCipher01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CaesarCipher01.cpp; sourceTree = "<group>"; };
+		3A5CDD86260D106D00BD4213 /* 1601.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1601.cpp; sourceTree = "<group>"; };
 		3A61325F2260C90A00569D33 /* cd1301.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cd1301.cpp; sourceTree = "<group>"; };
 		3A6132602260C90A00569D33 /* cd1301.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cd1301.hpp; sourceTree = "<group>"; };
 		3A6132622260CBBF00569D33 /* classic1301.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classic1301.cpp; sourceTree = "<group>"; };
@@ -522,6 +524,22 @@
 			path = 1008b;
 			sourceTree = "<group>";
 		};
+		3A5CDD84260D102500BD4213 /* Chapter 16 */ = {
+			isa = PBXGroup;
+			children = (
+				3A5CDD85260D103C00BD4213 /* 1601 */,
+			);
+			path = "Chapter 16";
+			sourceTree = "<group>";
+		};
+		3A5CDD85260D103C00BD4213 /* 1601 */ = {
+			isa = PBXGroup;
+			children = (
+				3A5CDD86260D106D00BD4213 /* 1601.cpp */,
+			);
+			path = 1601;
+			sourceTree = "<group>";
+		};
 		3A61325D2260C8AF00569D33 /* Chapter 13 */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +789,7 @@
 				3A61325D2260C8AF00569D33 /* Chapter 13 */,
 				3AADB4CE22C27C7500C91320 /* Chapter 14 */,
 				3A44C22224D06486004C8747 /* Chapter 15 */,
+				3A5CDD84260D102500BD4213 /* Chapter 16 */,
 				3A68487C215126EB004C5F68 /* Experiments */,
 				3A24FC1821BEA76B00EB1EB2 /* Data Structures */,
 				3AD3ED9520EBD8F3008D28BF /* main.cpp */,
@@ -968,6 +987,7 @@
 				3A86473224D84C9C002F765A /* 1503.cpp in Sources */,
 				3ADA52DF2226CE8800F12BE9 /* String1202.cpp in Sources */,
 				3A49E85721B8009A004CC9C7 /* SimpleListA.cpp in Sources */,
+				3A5CDD87260D106D00BD4213 /* 1601.cpp in Sources */,
 				3A86473824D86D0B002F765A /* Sales1504.cpp in Sources */,
 				3A7C1A9A21B6E480005FA9F3 /* Move1006.cpp in Sources */,
 				3A6132642260CBBF00569D33 /* classic1301.cpp in Sources */,
